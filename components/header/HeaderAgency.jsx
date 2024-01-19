@@ -61,7 +61,7 @@ const HeaderAgency = () => {
                   height={146}
                   style={{ objectFit: "contain" }}
                   className="white"
-                  src="/assets/img/root/logo-white.png"
+                  src="/assets/img/root/rp-logo-white.png"
                   alt="logo"
                   loading="lazy"
                 />
@@ -116,8 +116,7 @@ const HeaderAgency = () => {
             <a className="is-active" href="#">
               Eng
             </a>
-            <a href="#">Fra</a>
-            <a href="#">Ger</a>
+            <a href="#">Spa</a>
           </div>
           <span
             className="ptf-offcanvas-menu-icon js-offcanvas-menu-toggle"

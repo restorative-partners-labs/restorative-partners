@@ -10,143 +10,98 @@ const menuContent = [
     activeClass: "sf-with-ul",
     page: "home",
     menuClass: "two-columns current-menu-item",
-    dropDownItems: [
-      {
-        name: "Home Default",
-        routerPath: "/home-default",
-      },
-      {
-        name: "Home Studio",
-        routerPath: "/home-studio",
-      },
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
-      {
-        name: "Home Dark",
-        routerPath: "/home-dark",
-      },
-      {
-        name: "Home Freelancer",
-        routerPath: "/home-freelancer",
-      },
-      {
-        name: "Home Trending",
-        routerPath: "/home-trending",
-      },
-      {
-        name: "Home Modern",
-        routerPath: "/home-modern",
-      },
-    ],
+    dropDownItems: [],
   },
   {
-    name: "Portfolio",
+    name: "Our Mission",
     page: "works",
     activeClass: "",
     menuClass: "",
     dropDownItems: [
       {
-        name: "Works Grid",
+        name: "Abot RP",
         routerPath: "/works-grid",
       },
       {
-        name: "Works Masonry",
+        name: "Abot Restorative Justice",
+        routerPath: "/works-grid",
+      },
+      {
+        name: "Our Leaders",
         routerPath: "/works-masonry",
       },
       {
-        name: "Works Listing",
+        name: "Annual Reports",
         routerPath: "/works-listing",
       },
       {
-        name: "Works Carousel",
+        name: "Get in Touch",
         routerPath: "/works-carousel",
-      },
-      {
-        name: "Works Showcase",
-        routerPath: "/works/3",
       },
     ],
   },
   {
-    name: "Blog",
+    name: "Programs",
     activeClass: "",
     menuClass: "",
     page: "blog",
 
     dropDownItems: [
       {
-        name: "Blog Grid",
+        name: "In Custody",
         routerPath: "/blog-grid",
       },
       {
-        name: "Blog Masonry",
+        name: "System Navigation",
         routerPath: "/blog-masonry",
       },
       {
-        name: "Blog Sidebar",
+        name: "Mentorship",
         routerPath: "/blog-sidebar",
       },
       {
-        name: "Blog Details",
+        name: "Housing",
         routerPath: "/blog/2",
       },
       {
-        name: "Blog Details Sidebar",
+        name: "Treatment",
+        routerPath: "/blog-details-sidebar/7",
+      },
+      {
+        name: "Workforce Development",
+        routerPath: "/blog-details-sidebar/7",
+      },,
+      {
+        name: "Reentry Resources",
         routerPath: "/blog-details-sidebar/7",
       },
     ],
   },
   {
-    name: "Pages",
+    name: "Get Involved",
     activeClass: "",
     page: "others",
     menuClass: "two-columns",
     dropDownItems: [
       {
-        name: "About Us",
+        name: "Events",
         routerPath: "/about-us",
       },
       {
-        name: "About Me",
+        name: "Volunteer",
         routerPath: "/about-me",
       },
       {
-        name: "Services",
+        name: "Careers",
         routerPath: "/service",
       },
       {
-        name: "Service Details",
+        name: "Donations",
         routerPath: "/service/5",
       },
       {
         name: "Pricing",
         routerPath: "/pricing",
-      },
-      {
-        name: "Team",
-        routerPath: "/team",
-      },
-      {
-        name: "FAQ",
-        routerPath: "/faq",
-      },
-      {
-        name: "Contact",
-        routerPath: "/contact",
-      },
-      {
-        name: "Page 404",
-        routerPath: "/404",
-      },
-      {
-        name: "Coming Soon",
-        routerPath: "/coming-soon",
       },
     ],
   },
