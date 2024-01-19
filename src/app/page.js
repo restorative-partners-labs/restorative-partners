@@ -272,7 +272,7 @@ export default function Index() {
 
       <Footer/>
       <CookieModal/>
-      <Switcher/>
+      {/* <Switcher/> */}
     </>
   )
 }
