@@ -52,7 +52,7 @@ const HeaderAgency = () => {
                   height={146}
                   style={{ objectFit: "contain" }}
                   className="black"
-                  src="/assets/img/root/logo-dark.png"
+                  src="/assets/img/root/rp-logo-white.png"
                   alt="logo"
                   loading="lazy"
                 />

@@ -19,11 +19,11 @@ const menuContent = [
     menuClass: "",
     dropDownItems: [
       {
-        name: "Abot RP",
+        name: "About RP",
         routerPath: "/works-grid",
       },
       {
-        name: "Abot Restorative Justice",
+        name: "About Restorative Justice",
         routerPath: "/works-grid",
       },
       {

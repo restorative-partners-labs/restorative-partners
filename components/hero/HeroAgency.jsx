@@ -26,8 +26,8 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
-                <span className="has-accent-1">Bigger</span>, Bolder <br />&
-                Better
+                <span className="has-accent-1">Restore</span>, Transform <br />&
+                Build
               </h1>
 
               {/* <!--Spacer--> */}
@@ -40,8 +40,8 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+                Transforming Lives Impacted by Crime through Healing Services &
+                Relationships
               </p>
 
               {/* <!--Spacer--> */}
@@ -73,8 +73,8 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color text-center">
-                <span className="has-accent-1">Swiss</span> Style <br />
-                Interface
+                <span className="has-accent-1">Engage</span> Empower <br />
+                Support
               </h1>
               {/* <!--Spacer--> */}
               <div
@@ -85,8 +85,8 @@ const HeroAgency = () => {
                 className="fz-24 has-white-color text-center"
                 style={{ maxWidth: "34.375rem", margin: "0 auto" }}
               >
-                Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+                Help us on our mission. Click below to find ways you can create
+                impact in our community.
               </p>
               <div
                 className="ptf-spacer"
@@ -108,8 +108,7 @@ const HeroAgency = () => {
           <div className="ptf-showcase-slide">
             <div className="container">
               <h1 className="fz-100 fz-90--lg lh-1 has-white-color">
-                <span className="has-accent-1">Crafting</span> Digital
-                Experience
+                <span className="has-accent-1">Creating</span> Community Impact
               </h1>
               {/* <!--Spacer--> */}
               <div
@@ -121,7 +120,7 @@ const HeroAgency = () => {
                 style={{ maxWidth: "34.375rem" }}
               >
                 Like any great agency, we are only as good as the result we
-                deliver of our recent work.
+                deliver to the people. Learn about our impact!
               </p>
               {/* <!--Spacer--> */}
               <div
@@ -131,10 +130,10 @@ const HeroAgency = () => {
               <div className="d-flex">
                 {/* <!--Button--> */}
                 <a className="ptf-btn ptf-btn--primary" href="" target="_self">
-                  Get Started
+                  View Impact Report
                 </a>
                 {/* <!--Video Button--> */}
-                <div
+                {/* <div
                   className="ptf-video-button"
                   onClick={() => setOpen(true)}
                   style={{
@@ -149,7 +148,7 @@ const HeroAgency = () => {
                     View our <br />
                     story
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
