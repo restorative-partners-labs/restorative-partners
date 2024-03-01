@@ -14,18 +14,18 @@ const FooterTwo = () => {
               <li>
                 <span>Address</span>
                 <p>
-                  Suite 1506, ERAGON Building, 256 Fifth Avenue, CA 92006,
-                  United States
+                  3196 S Higuera St suite d, San Luis Obispo, CA 93401, United
+                  States
                 </p>
               </li>
               <li>
                 <span>Phone</span>
-                <a href="tel:86631250859">+8 (663) 125-08-59</a>
+                <a href="tel:8052421272">(805) 242-1272</a>
               </li>
               <li>
                 <span>Email</span>
-                <a href="mailto:hello@moonexstudio.com">
-                  hello@moonexstudio.com
+                <a href="mailto:info@restorativepartners.org">
+                  info@restorativepartners.org
                 </a>
               </li>
             </ul>

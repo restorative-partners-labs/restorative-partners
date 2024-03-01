@@ -65,7 +65,7 @@ const HomeAgency = () => {
                           Directly
                         </div>
                         <div className="ptf-phone-block__phone">
-                          <a href="tel:+3796354868">(+37) 96 3548 68</a>
+                          <a href="tel:8052421272">(805) 242-1272</a>
                         </div>
                       </div>
                     </div>
@@ -105,7 +105,8 @@ const HomeAgency = () => {
                       data-aos-delay="0"
                     >
                       <h2 className="h1 large-heading has-accent-1">
-                        Creative Design & Advertising
+                        Transforming Lives Impacted by Crime through Healing
+                        Services & Relationships
                       </h2>
                     </div>
                   </div>
@@ -353,7 +354,7 @@ const HomeAgency = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading has-accent-1">Our Crew</h2>
+                  <h2 className="h1 large-heading has-accent-1">Our Leaders</h2>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
@@ -373,43 +374,7 @@ const HomeAgency = () => {
               ></div>
             </section>
 
-            {/*=============================================
-            Start Pricing section
-            ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-              ></div>
-              <div className="container">
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  <h2 className="h1 large-heading has-accent-1">
-                    Pricing & Plan
-                  </h2>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "3.75rem", "--ptf-md": "1.875rem" }}
-                ></div>
-              </div>
-              <div className="container">
-                <div className="row" style={{ "--bs-gutter-x": "2rem" }}>
-                  <Pricing />
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-              ></div>
-            </section>
+
 
             <section>
               <div className="container">

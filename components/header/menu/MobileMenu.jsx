@@ -17,137 +17,98 @@ import Social from "../../social/Social";
 const menuContent = [
   {
     name: "Home",
+    activeClass: "sf-with-ul",
     page: "home",
-    dropDownItems: [
-      {
-        name: "Home Default",
-        routerPath: "/home-default",
-      },
-      {
-        name: "Home Studio",
-        routerPath: "/home-studio",
-      },
-      {
-        name: "Home Agency",
-        routerPath: "/home-agency",
-      },
-      {
-        name: "Home Minimal",
-        routerPath: "/home-minimal",
-      },
-      {
-        name: "Home Dark",
-        routerPath: "/home-dark",
-      },
-      {
-        name: "Home Freelancer",
-        routerPath: "/home-freelancer",
-      },
-      {
-        name: "Home Trending",
-        routerPath: "/home-trending",
-      },
-      {
-        name: "Home Modern",
-        routerPath: "/home-modern",
-      },
-    ],
+    menuClass: "two-columns current-menu-item",
+    dropDownItems: [],
   },
   {
-    name: "Portfolio",
+    name: "Our Mission",
     page: "works",
+    activeClass: "",
+    menuClass: "",
     dropDownItems: [
       {
-        name: "Works Grid",
+        name: "About Restorative Partners",
         routerPath: "/works-grid",
       },
       {
-        name: "Works Masonry",
+        name: "About Restorative Justice",
+        routerPath: "/works-grid",
+      },
+      {
+        name: "Our Leaders",
         routerPath: "/works-masonry",
       },
       {
-        name: "Works Listing",
+        name: "Annual Reports",
         routerPath: "/works-listing",
       },
       {
-        name: "Works Carousel",
+        name: "Get in Touch",
         routerPath: "/works-carousel",
-      },
-      {
-        name: "Works Showcase",
-        routerPath: "/works/3",
       },
     ],
   },
   {
-    name: "Blog",
+    name: "Programs",
+    activeClass: "",
+    menuClass: "",
     page: "blog",
+
     dropDownItems: [
       {
-        name: "Blog Grid",
+        name: "In Custody",
         routerPath: "/blog-grid",
       },
       {
-        name: "Blog Masonry",
+        name: "System Navigation",
         routerPath: "/blog-masonry",
       },
       {
-        name: "Blog Sidebar",
+        name: "Mentorship",
         routerPath: "/blog-sidebar",
       },
       {
-        name: "Blog Details",
+        name: "Housing",
         routerPath: "/blog/2",
       },
       {
-        name: "Blog Details Sidebar",
+        name: "Treatment",
+        routerPath: "/blog-details-sidebar/7",
+      },
+      {
+        name: "Workforce Development",
+        routerPath: "/blog-details-sidebar/7",
+      },
+      ,
+      {
+        name: "Reentry Resources",
         routerPath: "/blog-details-sidebar/7",
       },
     ],
   },
   {
-    name: "Pages",
+    name: "Get Involved",
+    activeClass: "",
     page: "others",
+    menuClass: "two-columns",
     dropDownItems: [
       {
-        name: "About Us",
+        name: "Events",
         routerPath: "/about-us",
       },
       {
-        name: "About Me",
+        name: "Volunteer",
         routerPath: "/about-me",
       },
       {
-        name: "Services",
+        name: "Careers",
         routerPath: "/service",
       },
       {
-        name: "Service Details",
+        name: "Donations",
         routerPath: "/service/5",
-      },
-      {
-        name: "Pricing",
-        routerPath: "/pricing",
-      },
-      {
-        name: "Team",
-        routerPath: "/team",
-      },
-      {
-        name: "FAQ",
-        routerPath: "/faq",
-      },
-      {
-        name: "Contact",
-        routerPath: "/contact",
-      },
-      {
-        name: "Page 404",
-        routerPath: "/404",
-      },
-      {
-        name: "Coming Soon",
-        routerPath: "/coming-soon",
       },
     ],
   },
@@ -202,19 +163,10 @@ const MobileMenu = () => {
 
       <div className="ptf-offcanvas-menu__footer">
         <p className="ptf-offcanvas-menu__copyright">
-          @{new Date().getFullYear()} <span>Moonex</span>. All Rights Reserved.{" "}
+          @{new Date().getFullYear()} <span>Restorative Partners</span>. All a
+          Non-Profit #354654654 in San Luis Obispo, California.
           <br />
-          Development by{" "}
-          <span>
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ib-themes
-            </a>
-          </span>
-          .
+          Tax ID 47-4825349
         </p>
         <Social />
       </div>

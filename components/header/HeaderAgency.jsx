@@ -48,8 +48,8 @@ const HeaderAgency = () => {
               {/* <!--Logo--> */}
               <Link className="ptf-navbar-logo" href="/">
                 <Image
-                  width={151}
-                  height={146}
+                  width={200}
+                  height={180}
                   style={{ objectFit: "contain" }}
                   className="black"
                   src="/assets/img/root/rp-logo-white.png"
@@ -57,8 +57,8 @@ const HeaderAgency = () => {
                   loading="lazy"
                 />
                 <Image
-                  width={151}
-                  height={146}
+                  width={220}
+                  height={200}
                   style={{ objectFit: "contain" }}
                   className="white"
                   src="/assets/img/root/rp-logo-white.png"

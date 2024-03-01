@@ -19,7 +19,7 @@ const menuContent = [
     menuClass: "",
     dropDownItems: [
       {
-        name: "About RP",
+        name: "About Restorative Partners",
         routerPath: "/works-grid",
       },
       {
@@ -98,10 +98,6 @@ const menuContent = [
       {
         name: "Donations",
         routerPath: "/service/5",
-      },
-      {
-        name: "Pricing",
-        routerPath: "/pricing",
       },
     ],
   },
