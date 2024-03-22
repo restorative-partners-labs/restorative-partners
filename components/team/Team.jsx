@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -6,38 +6,51 @@ const teamContent = [
   {
     delayAnimation: "0",
     img: "team-1",
-    title: "Stephan Bowie",
-    designation: "CEO Founder",
+    title: "Cindy Ayala",
+    designation: "Mission & Restorative Justice Implementation Director",
   },
   {
     delayAnimation: "100",
     img: "team-2",
-    title: "Robert Downey Jr",
-    designation: "CO Founder",
+    title: "Sister Theresa Harpin",
+    designation: "Executive Director",
   },
   {
     delayAnimation: "200",
     img: "team-3",
-    title: "Laura Lorwence",
-    designation: "Project Management",
+    title: "Liz Holly",
+    designation: "Reentry Resource Center Director",
   },
   {
     delayAnimation: "300",
     img: "team-4",
-    title: "David De Berg",
-    designation: "Lead of Technical",
+    title: "Gus Chavez",
+    designation: "Housing & Treatment Director",
   },
   {
     delayAnimation: "0",
     img: "team-5",
-    title: "Elena Stephan",
-    designation: "SEO/Marketing",
+    title: "Gina Grieb",
+    designation: "Development & Marketing Director",
   },
   {
     delayAnimation: "100",
     img: "team-6",
-    title: "Andy Robertson",
-    designation: "Content Writer",
+    title: "Shelby Willits",
+    designation: "Executive Assistant",
+  },
+  {
+    delayAnimation: "200",
+    img: "team-6",
+    title: "David Fields",
+    designation: "Finance & HR Director",
+  },
+
+  {
+    delayAnimation: "300",
+    img: "team-6",
+    title: "Jason Hunter",
+    designation: "General Manager/Chef @ The Bridge Cafe",
   },
   {
     delayAnimation: "200",
@@ -64,9 +77,9 @@ const Team = () => {
               <a href="#">
                 {" "}
                 <Image
-                      width={1200}
-                      height={1200}
-                      style={{width : '100%' , height: '100%'}}
+                  width={1200}
+                  height={1200}
+                  style={{ width: "100%", height: "100%" }}
                   src={`/assets/img/root/team/${val.img}.png`}
                   alt={val.title}
                   loading="lazy"

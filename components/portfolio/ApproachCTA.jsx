@@ -6,13 +6,13 @@ const ReactTooltip = dynamic(() => import("react-tooltip"), { ssr: false });
 import Link from "next/link";
 import Image from "next/image";
 
-import {portfolioContenttwo} from '../../data/works'
-const PortfolioTwo = () => {
+import {approachCTA} from '../../data/works'
+const ApproachCTA = () => {
   return (
     <>
       <div className=" grid-item ">
         {/* <!--Portfolio Item--> */}
-        {portfolioContenttwo.map((val, i) => (
+        {approachCTA.map((val, i) => (
           <article
             className="ptf-work ptf-work--style-4"
             data-tip
@@ -52,4 +52,4 @@ const PortfolioTwo = () => {
   );
 };
 
-export default PortfolioTwo;
+export default ApproachCTA;

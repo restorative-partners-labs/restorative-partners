@@ -14,7 +14,7 @@ const ListTwo = () => {
       {listContenttwo.map((val, i) => (
         <li key={i}>
           <Link
-            href={`/service/${val.id}`}
+            href={`${val.link}`}
           >
             {val.name}
           </Link>

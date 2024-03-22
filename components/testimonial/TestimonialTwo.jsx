@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Slider from "react-slick";
@@ -9,7 +9,7 @@ const testimonialContent = [
     avatar: "twitter-avatar",
     name: "Thiago Alcantara",
     email: "@thiago.lfc",
-    hightlightText: "@moonex",
+    hightlightText: "@restorative",
     date: "15 Dec, 2022",
     description: `a studio with passionate, profressional &
     full creativity. Much more things that i’m expect. Really
@@ -67,9 +67,9 @@ const TestimonialTwo = () => {
               <div className="ptf-twitter-review__header">
                 <div className="ptf-twitter-review__avatar">
                   <Image
-                      width={1200}
-                      height={1200}
-                      style={{width : '100%' , height: '100%'}}
+                    width={1200}
+                    height={1200}
+                    style={{ width: "100%", height: "100%" }}
                     src={`/assets/img/root/${val.avatar}.png`}
                     alt="avatar"
                     loading="lazy"
@@ -77,25 +77,25 @@ const TestimonialTwo = () => {
                 </div>
                 <div className="ptf-twitter-review__meta">
                   <h6 className="ptf-twitter-review__author">{val.name}</h6>
-                  <div className="ptf-twitter-review__info">
+                  {/* <div className="ptf-twitter-review__info">
                     <a href="mailto:ibthemes21@gmail.com">{val.email}</a> -{" "}
                     {val.date}
-                  </div>
+                  </div> */}
                 </div>
-                <div className="ptf-twitter-review__icon">
+                {/* <div className="ptf-twitter-review__icon">
                   <i className="socicon-twitter"></i>
-                </div>
+                </div> */}
               </div>
               <div className="ptf-twitter-review__content">
                 <p>
-                  <a
+                  {/* <a
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {val.hightlightText}
-                  </a>{" "}
-                  - {val.description}
+                  </a>{" "} */}
+                  {val.description}
                 </p>
               </div>
             </div>
