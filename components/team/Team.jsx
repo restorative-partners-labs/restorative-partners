@@ -52,12 +52,12 @@ const teamContent = [
     title: "Jason Hunter",
     designation: "General Manager/Chef @ The Bridge Cafe",
   },
-  {
-    delayAnimation: "200",
-    img: "new-member",
-    title: "",
-    designation: "",
-  },
+  // {
+  //   delayAnimation: "200",
+  //   img: "new-member",
+  //   title: "",
+  //   designation: "",
+  // },
 ];
 
 const Team = () => {

@@ -39,132 +39,25 @@ const HomeDefault = () => {
             {/*=============================================
                 Start Service Section
               ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-lg-3">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading">
-                        Our <br />
-                        Services
-                      </h2>
-                      {/* <!--Spacer--> */}
-                      <div
-                        className="ptf-spacer"
-                        style={{ "--ptf-xxl": "2.5rem" }}
-                      ></div>
-                      <p className="fz-18">
-                        We help ambitious businesses like yours generate more
-                        profits by building awareness, driving web traffic,
-                        connecting with customers and growing overall sales.
-                      </p>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{
-                        "--ptf-lg": "4.375rem",
-                        "--ptf-md": "2.1875rem",
-                      }}
-                    ></div>
-                  </div>
-                  <div className="col-lg-8 offset-lg-1">
-                    <ServiceOne />
-                  </div>
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-            </section>
+
 
             {/*=============================================
                 Start Portfolio Section
               ============================================== */}
-            <section>
-              <div className="container-xxl">
-                <div className="row align-items-center">
-                  <div className="col-12 col-md-9">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading d-inline-flex">
-                        Latest Works
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="col-12 col-md-3 text-md-end">
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-md": "1.875rem" }}
-                    ></div>
-                    {/* <!--Animated Block--> */}
-                    <Link
-                      className="
-                          ptf-link-with-arrow
-                          fz-18
-                          text-uppercase
-                          fw-semibold
-                          has-black-color
-                          d-none d-lg-inline-flex
-                        "
-                      href="/works-grid"
-                      style={{ marginLeft: "5.625rem" }}
-                    >
-                      All Projects <i className="lnil lnil-chevron-right"></i>
-                    </Link>
-                  </div>
-                </div>
-                {/* <!--Spacer--> */}
-                <div
-                  className="ptf-spacer"
-                  style={{ "--ptf-xxl": "6.25rem" }}
-                ></div>
-                {/* <!--Animated Block--> */}
-                <div
-                  className="ptf-animated-block"
-                  data-aos="fade"
-                  data-aos-delay="0"
-                >
-                  {/* <!--Content Slider--> */}
-                  <Portfolio />
-                </div>
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "9.5rem" }}
-              ></div>
-            </section>
+   
 
             {/*=============================================
                 Start Our Approach Section
               ============================================== */}
             <section
               className="has-accent-1-background"
-              style={{
-                backgroundImage: `url(${
-                  "" + "/assets/img/root/service-bubble.png"
-                })`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "100% calc(100% + 120px)",
-              }}
+              // style={{
+              //   backgroundImage: `url(${
+              //     "" + "/assets/img/root/service-bubble.png"
+              //   })`,
+              //   backgroundRepeat: "no-repeat",
+              //   backgroundPosition: "100% calc(100% + 120px)",
+              // }}
             >
               {/* <!--Spacer--> */}
               <div
@@ -178,7 +71,7 @@ const HomeDefault = () => {
                   data-aos="fade"
                   data-aos-delay="0"
                 >
-                  <h2 className="h1 large-heading">Our Approach</h2>
+                  <h2 className="h1 large-heading">In Custody</h2>
                 </div>
                 {/* <!--Spacer--> */}
                 <div
@@ -197,58 +90,7 @@ const HomeDefault = () => {
             {/*=============================================
                 Start Brand and Counterup Section
               ============================================== */}
-            <section>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-              <div className="container-xxl">
-                <div className="row">
-                  <div className="col-12">
-                    {/* <!--Animated Block--> */}
-                    <div
-                      className="ptf-animated-block"
-                      data-aos="fade"
-                      data-aos-delay="0"
-                    >
-                      <h2 className="h1 large-heading">Moonex’s Partners</h2>
-                    </div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "7.5rem", "--ptf-md": "3.75rem" }}
-                    ></div>
-                  </div>
-                </div>
-                {/* End .row */}
-                <Brand />
-                <div className="row">
-                  <div className="col-12">
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "8.75rem", "--ptf-md": "4.375rem" }}
-                    ></div>
-                    {/* <!--Divider--> */}
-                    <div className="ptf-divider"></div>
-                    {/* <!--Spacer--> */}
-                    <div
-                      className="ptf-spacer"
-                      style={{ "--ptf-xxl": "6.25rem", "--ptf-md": "3.125rem" }}
-                    ></div>
-                  </div>
-                </div>
-                {/* End .row */}
 
-                <Counter />
-              </div>
-              {/* <!--Spacer--> */}
-              <div
-                className="ptf-spacer"
-                style={{ "--ptf-xxl": "10rem", "--ptf-md": "5rem" }}
-              ></div>
-            </section>
 
             {/*=============================================
                 Start Jaralax Testimonial Section

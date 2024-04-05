@@ -576,7 +576,7 @@ const HomeAgency = () => {
             <footer className="ptf-footer ptf-footer--style-3">
               <div className="container">
                 <div className="row">
-                  <div className="col-xl-10 offset-xl-2">
+                  <div className="col-xl-10">
                     <div className="ptf-footer__top">
                       <FooterTwo />
                     </div>
