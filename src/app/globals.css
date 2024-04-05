@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--plus-jakarta-sans);
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+
+@layer base {
+  :root {
+    --background: #F9FFFC;
+
+    --primary: #253B2F;
+    --primary-foreground: #253B2F;
+
+    --secondary: #D2E0D9;
+    --secondary-foreground: #D2E0D9;
+
+    --muted: #32393E;
+
+    --rgba-color: rgba(255, 255, 255, 0.20);
+    --primary-rgba: rgb(108, 117, 125, 0.20);
+    --secondary-rgba: rgb(210, 224, 217, 0.50);
+    --overlay: rgba(0, 0, 0, 0.40);
+
+
+
+    --border: rgba(37, 59, 47, 0.20);
+
+    --radius: 8px;
+  }
+
+  .dark {
+    --background: #06060e;
+
+    --primary: #253B2F;
+    --primary-foreground: #fff;
+
+    --secondary: #D2E0D9;
+    --secondary-foreground: #D2E0D9;
+
+    --rgba-color: rgba(255, 255, 255, 0.20);
+    --primary-rgba: rgb(108, 117, 125, 0.20);
+    --secondary-rgba: rgb(210, 224, 217, 0.50);
+    --overlay: rgba(0, 0, 0, 0.40);
+
+    --muted: #32393E;
+
+    --border: rgba(37, 59, 47, 0.20);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+}
+
+@layer utilities {
+  .stroke-dasharray-1000 {
+    stroke-dasharray: 1000;
+  }
+
+  .stroke-dashoffset-1000 {
+    stroke-dashoffset: 1000;
+  }
+
+  .webkit-text-stroke-width-1 {
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .webkit-text-stroke-width-2 {
+    -webkit-text-stroke-width: 2px;
+  }
+
+  .webkit-text-stroke-white {
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .webkit-text-stroke-primary {
+    -webkit-text-stroke-color: var(--primary);
+  }
+
+  .webkit-text-stroke-secondary {
+    -webkit-text-stroke-color: var(--secondary);
+  }
+
+  .hover-underline span {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, transparent 96%, var(--primary) 0);
+    background-size: 0 100%;
+    transition: background-size 0.4s ease-out;
+  }
+
+  .hover-underline:hover span {
+    background-size: 100% 100%;
+  }
+}
+
+
+/* ---------- style for team card one */
+@media(min-width:1024px) {
+  .team-card:nth-child(3n) {
+    margin-top: 12px;
+  }
+
+  .team-card:nth-child(3n + 1) {
+    margin-top: -120px;
+  }
+
+  .team-card:nth-child(3n + 2) {
+    margin-top: -210px;
+  }
+}
+
+/* ---------- style for team card one */
+
+/* ---------- style for counter */
+.index-module_slot__DpPgW {
+  margin-left: -2px;
+  margin-bottom: -9px;
+}
+
+/* ---------- style for counter */
+
+
+/* --------- overright swiper slider custom css  */
+.banner-two .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s;
+  height: auto;
+  position: relative;
+}
+
+.banner-one .swiper-pagination-bullet-active .title {
+  display: block;
+}
+
+.banner-one .swiper-pagination-bullet-active .active-blut {
+  color: var(--primary);
+}
+
+
+.project-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s;
+  height: auto;
+}
+
+.swiper-pagination-progressbar-fill {
+  position: absolute;
+  width: 70%;
+  height: 5px;
+  background: var(--primary);
+  left: 0px;
+  bottom: 8px;
+  transform-origin: left center;
+}
+
+.blog-single .project-slider-one .swiper-slide {
+  width: auto !important;
+}
+
+/* --------- overright swiper slider custom css  */
+
+/* --------- hero animation */
+.animate-fill,
+.animate-fill::after {
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate-fill {
+  position: relative;
+  animation-name: clip-text;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.animate-fill::after {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+  animation-name: text-revealer;
+}
+
+@keyframes text-revealer {
+
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+/* --------- hero animation */
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  padding-right: calc(1.5rem * .5);
+  padding-left: calc(1.5rem * .5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 340px) {
+  .container {
+    max-width: 100%
+  }
+
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  /* ---------- style for counter */
+  .index-module_slot__DpPgW {
+    margin-left: -6px;
+    margin-bottom: -9px;
+  }
+
+  /* ---------- style for counter */
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  /* ------------ swiper js progress bar */
+  .swiper-pagination-progressbar-fill {
+    width: 90%;
+  }
+  .blog-single .project-slider-one .swiper-wrapper{
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
