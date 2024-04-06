@@ -5,7 +5,7 @@ import hero_3 from "@/assets/images/hero-3.jpg"
 export const bannerOneData = [
     {
         id: 1,
-        title: "Elegant Design Showcase",
+        title: "Restorative Partners",
         heading_one: "Elegance",
         heading_two: "Redefined",
         banner_img: hero_1,
