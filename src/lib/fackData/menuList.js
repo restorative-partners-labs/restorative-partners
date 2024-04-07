@@ -10,7 +10,7 @@ export const menuList = [
   {
     id: 2,
     name: "Our Mission",
-    path: "/project-archive",
+    path: "#",
     isMegaMenu: false,
     isDropdown: [
       {
@@ -58,19 +58,19 @@ export const menuList = [
           {
             id: 1,
             name: "In Custody Programs",
-            path: "/service-single",
+            path: "/in-custody-programs",
             desc: "Everything from concept to completion",
           },
           {
             id: 2,
             name: "System Navigation",
-            path: "/service-single",
+            path: "/system-navigation",
             desc: "Focuses on optimizing functionality and aesthetics",
           },
           {
             id: 3,
             name: "Mentorship",
-            path: "/service-single",
+            path: "/mentorship",
             desc: "Maximize the potential of your space",
           },
         ],
@@ -81,19 +81,19 @@ export const menuList = [
           {
             id: 4,
             name: "Juvenile Hall Programs",
-            path: "/service-single",
+            path: "/in-custody-programs/juvenile-hall",
             desc: "We help you choose the perfect palette",
           },
           {
             id: 5,
             name: "Treatment Services",
-            path: "/service-single",
+            path: "/treatment",
             desc: "We oversee every detail for a successful project",
           },
           {
             id: 6,
             name: "Workforce Development",
-            path: "/service-single",
+            path: "/workforce-development",
             desc: "Elevate your space with unique furnishings",
           },
         ],
@@ -138,12 +138,12 @@ export const menuList = [
       {
         id: 1,
         name: "Events",
-        path: "/blog-archive",
+        path: "/events",
       },
       {
         id: 2,
         name: "Volunteer",
-        path: "/blog-single",
+        path: "/volunteer",
       },
       {
         id: 2,
