@@ -314,3 +314,15 @@ body {
     max-width: 1320px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff00; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--alternate); /* Color of the scrollbar handle */
+}
