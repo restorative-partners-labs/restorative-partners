@@ -14,6 +14,8 @@ import { useSelector } from "react-redux";
 import { usePathname } from "next/navigation";
 import useActiveNavLink from "@/hooks/useActiveNavLink";
 import useStickyHeader from "@/hooks/useStickyHeader";
+import Image from "next/image";
+import img from "@/assets/images/rp-logo.png";
 
 const BottomNavbar = ({ linkColor }) => {
   const { products } = useSelector((state) => state.addToCart);
@@ -32,7 +34,13 @@ const BottomNavbar = ({ linkColor }) => {
             href="/"
             className={cn(`logo text-primary-foreground ${linkColor}`)}
           >
-            <Logo height={"31"} width={"219"} />
+            <Image
+              src={img}
+              alt={name}
+              loading="lazy"
+              width={200}
+              height={30}
+            />
           </Link>
         </div>
         <nav>

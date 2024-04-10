@@ -17,10 +17,11 @@ const useStickyHeader = (linkColor) => {
         if (scrollTop >= 250) {
             header?.classList.add('container-fluid', 'fixed', 'top-0', 'left-0', 'w-full', 'bg-background', 'z-20', 'animate-slideDown', 'shadow-md')
             mobileNavbar?.classList.add('container-fluid', 'fixed', 'top-0', 'left-0', 'w-full', 'bg-background', 'z-20', 'animate-slideDown')
+            logo?.classList.add('py-2')
 
             nav_link.forEach((ele) => {
                 ele.classList.remove("py-[34px]")
-                ele.classList.add("py-5")
+                ele.classList.add("py-7")
                 if (linkColor) {
                     if (ele.classList.contains("text-white") || logo.classList.contains("text-black")) {
                         ele.classList.remove("text-white")
