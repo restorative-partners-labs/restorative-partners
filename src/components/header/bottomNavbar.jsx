@@ -36,7 +36,6 @@ const BottomNavbar = ({ linkColor }) => {
           >
             <Image
               src={img}
-              alt={name}
               loading="lazy"
               width={200}
               height={30}

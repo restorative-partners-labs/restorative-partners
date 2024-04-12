@@ -7,18 +7,9 @@ import { cn } from "@/lib/utils";
 import VideoPlay from "../ui/videoPlay";
 import ButtonOutline from "../ui/buttons/buttonOutline";
 
-const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
+const OurPledge = ({ text_muted, bg_muted, after_bg_muted }) => {
   return (
     <section className="pt-20">
-      <div className="container-fluid ">
-        <SectionTitle
-          sectionName={"."}
-          sectionTitle={"Our Approach"}
-          sectionDesc={""}
-          bg_muted={bg_muted}
-          text_muted={text_muted}
-        />
-      </div>
       <div className="container-fluid lg:pt-30 2sm:pt-20 pt-14">
         <div
           className={cn(
@@ -28,41 +19,34 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
           <div className="container flex lg:flex-row flex-col justify-between relative z-10">
             <div className="2xl:max-w-[637px] lg:max-w-[500px] w-full">
               <h4 className="text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-135">
-                Restorative Partners practices Restorative Justice that centers
-                on:
+                We Pledge To:
               </h4>
 
               <ul className="mt-[35px]">
                 <li className="text-secondary-foreground flex items-center gap-[27px]">
                   <RightArrow width={"35"} height={"22"} />{" "}
                   <span className="text-secondary-foreground text-xl leading-160 font-bold">
-                    The harm that has been done to people and relationships
+                    Respect the dignity of every person
                   </span>{" "}
                 </li>
                 <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
                   <RightArrow width={"35"} height={"22"} />{" "}
                   <span className="text-secondary-foreground text-xl leading-160 font-bold">
-                    The obligations and responsibilities this harm creates
+                    Overcome violence with love and compassion
                   </span>{" "}
                 </li>
                 <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
                   <RightArrow width={"35"} height={"22"} />{" "}
                   <span className="text-secondary-foreground text-xl leading-160 font-bold">
-                    Justice that involves wrongdoers, victims and community
-                    members
+                    Accompany and support anyone affected by crime on their
+                    healing journey
                   </span>{" "}
                 </li>
                 <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
                   <RightArrow width={"35"} height={"22"} />{" "}
                   <span className="text-secondary-foreground text-xl leading-160 font-bold">
-                    Working towards healing the harm and right the wrong
-                  </span>{" "}
-                </li>
-                <li className="text-secondary-foreground flex items-center gap-[27px] mt-4">
-                  <RightArrow width={"35"} height={"22"} />{" "}
-                  <span className="text-secondary-foreground text-xl leading-160 font-bold">
-                    Restorative justice acknowledges our interconnectedness as
-                    human beings.{" "}
+                    Be an instrument of restoration, forgiveness, and
+                    reconciliation
                   </span>{" "}
                 </li>
               </ul>
@@ -73,7 +57,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                     "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
                   }
                 >
-                  Learn More About Our Mission{" "}
+                  Learn More About Our Organization{" "}
                   <RightArrow width={"35"} height={"22"} />
                 </ButtonOutline>
               </Link>
@@ -86,4 +70,4 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
   );
 };
 
-export default VideoPortfolio;
+export default OurPledge;

@@ -6,7 +6,7 @@ import project_img_4 from "@/assets/images/project-overview-img-4.jpg"
 export const projectsData = [
     {
         id: 1,
-        project_name: "Pixel House",
+        project_name: "Bridging The Gap 2024",
         project_img: project_img_2,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
         client: "Sogeprom",
@@ -18,7 +18,7 @@ export const projectsData = [
     },
     {
         id: 2,
-        project_name: "La Fuente",
+        project_name: "Grilled Cheese Festival 2024",
         project_img: project_img_3,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
         client: "Sogeprom",
@@ -30,7 +30,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        project_name: "Bovio House",
+        project_name: "Royal Tea 2024",
         project_img: project_img_1,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
         client: "Sogeprom",
@@ -42,7 +42,7 @@ export const projectsData = [
     },
     {
         id: 4,
-        project_name: "MFA Lakeside",
+        project_name: "Fall Appeal 2024",
         project_img: project_img_4,
         project_desc: "At the heart of the e+ project, made of natural anodised aluminium, glazing, sandstone and granite, the lobby  ...see more",
         client: "Sogeprom",

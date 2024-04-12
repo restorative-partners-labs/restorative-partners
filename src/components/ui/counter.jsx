@@ -4,23 +4,23 @@ import SlotCounter from "react-slot-counter"
 const counterList = [
     {
         id: 1,
-        count: "12",
+        count: "13",
         title: "Years of Experience"
     },
     {
         id: 2,
         count: '182+',
-        title: "Projects Completed"
+        title: "Transformation Stories"
     },
     {
         id: 3,
-        count: '425k',
-        title: "Square Feet covered"
+        count: '1000+',
+        title: "Lives Impacted"
     },
     {
         id: 4,
-        count: '93%',
-        title: "Positive Feedbacks"
+        count: '100+',
+        title: "Jobs Filled"
     },
 
 ]

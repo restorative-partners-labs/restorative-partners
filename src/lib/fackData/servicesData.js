@@ -1,57 +1,57 @@
 export const servicesData = [
     {
         id: "01",
-        service_name: "Residential Design",
+        service_name: "In Custody Programs",
         service_desc: "Our residential design services cover everything from concept to completion",
-        link: "/service-single"
+        link: "/in-custody-programs"
     },
     {
         id: "02",
-        service_name: "Commercial Design",
+        service_name: "System Navigation",
         service_desc: "Our expertise in commercial design focuses on optimizing functionality and aesthetics",
-        link: "/service-single"
+        link: "/system-navigation"
     },
     {
         id: "03",
-        service_name: "Space Planning",
+        service_name: "Mentorship",
         service_desc: "We maximize the potential of your space, ensuring it's organized, and aesthetically pleasing.",
 
-        link: "/service-single"
+        link: "/mentorship"
     },
     {
         id: "04",
-        service_name: "Color Consultation",
+        service_name: "Juvenile Hall Programs",
         service_desc: "Colors play a significant role in design. We help you choose the perfect palette for your space.",
 
-        link: "/service-single"
+        link: "/juvenile-hall-programs"
     },
     {
         id: "05",
-        service_name: "Revamps & Remodels",
+        service_name: "Treatment Services",
         service_desc: "We provide renovation and remodeling services that breathe new life into existing structures.",
 
-        link: "/service-single"
+        link: "/treatment-services"
     },
     {
         id: "06",
-        service_name: "Custom Furnishings",
+        service_name: "Workforce Development",
         service_desc: "Elevate your space with unique, furnishings that are designed to suit your style and needs.",
 
-        link: "/service-single"
+        link: "/workforce-development"
     },
     {
         id: "07",
-        service_name: "Project Management",
+        service_name: "ReEntry Resources",
         service_desc: "From initial concepts to final installation, we oversee every detail for a successful project.",
 
-        link: "/service-single"
+        link: "/reentry-resources"
     },
     {
         id: "08",
-        service_name: "Concept Development",
+        service_name: "Housing",
         service_desc: "We work closely with you to develop a design concept that resonates with your vision.",
 
-        link: "/service-single"
+        link: "/housing"
     },
 
 ]

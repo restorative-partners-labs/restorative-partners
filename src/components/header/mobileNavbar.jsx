@@ -43,7 +43,6 @@ const MobileNavbar = () => {
             <Link href={"/"} className="text-primary-foreground">
               <Image
                 src={img}
-                alt={name}
                 loading="lazy"
                 width={200}
                 height={30}
@@ -59,7 +58,6 @@ const MobileNavbar = () => {
                   <Link href={"/"} className="text-primary-foreground">
                     <Image
                       src={img}
-                      alt={name}
                       loading="lazy"
                       width={200}
                       height={30}

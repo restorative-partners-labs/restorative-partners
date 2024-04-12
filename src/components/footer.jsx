@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Logo from "@/assets/icons/logo";
 import SocialMediaList from "./ui/socialMediaList";
+import Image from "next/image";
+import img from "@/assets/images/rp-logo.png";
 
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
         <div className="container">
           <div className="grid lg:grid-cols-3 grid-cols-1 items-center pt-[100px] pb-20">
             <div>
-              <Link href={""} className="text-primary-foreground">
-                <Logo height={"30"} width={"218"} />
+              <Link href={"/"} className="text-primary-foreground">
+                <Image src={img} loading="lazy" width={200} height={30} />
               </Link>
               <h5 className="xl:text-2xl text-xl font-semibold text-primary-foreground leading-160 pt-2.5 pb-3">
                 Transforming Lives Impacted by Crime through Healing Services &
