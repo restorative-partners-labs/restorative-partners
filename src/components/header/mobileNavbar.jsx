@@ -41,12 +41,7 @@ const MobileNavbar = () => {
         <div className="container-fluid ">
           <div className="flex items-center justify-between py-4">
             <Link href={"/"} className="text-primary-foreground">
-              <Image
-                src={img}
-                loading="lazy"
-                width={200}
-                height={30}
-              />
+              <Image src={img} loading="lazy" width={200} height={30} />
             </Link>
             <div>
               <nav
@@ -56,12 +51,7 @@ const MobileNavbar = () => {
               >
                 <div className="flex justify-between items-center">
                   <Link href={"/"} className="text-primary-foreground">
-                    <Image
-                      src={img}
-                      loading="lazy"
-                      width={200}
-                      height={30}
-                    />
+                    <Image src={img} loading="lazy" width={200} height={30} />
                   </Link>
                   <div onClick={() => setIsMenuActive(false)}>
                     <IoMdClose className="text-2xl cursor-pointer" />
@@ -158,9 +148,10 @@ const MobileNavbar = () => {
                                           >
                                             {name}
                                           </Link>
-                                          <span className="block text-secondary-foreground_rgba text-sm">
+                                          {/* Removing decription until Ifigure out how to show it on mobile */}
+                                          {/* <span className="block text-secondary-foreground_rgba text-sm">
                                             {desc}
-                                          </span>
+                                          </span> */}
                                         </li>
                                       );
                                     })}
