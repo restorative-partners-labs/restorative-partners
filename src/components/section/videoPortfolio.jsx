@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RightArrow from "@/assets/icons/rightArrow";
-import video_thumb from "@/assets/images/video-image.jpg";
+import video_thumb from "@/assets/images/video-image.png";
 import SectionTitle from "../ui/sectionTitle";
 import { cn } from "@/lib/utils";
 import VideoPlay from "../ui/videoPlay";
@@ -12,9 +12,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
     <section className="pt-20">
       <div className="container-fluid ">
         <SectionTitle
-          sectionName={"."}
           sectionTitle={"Our Approach"}
-          sectionDesc={""}
           bg_muted={bg_muted}
           text_muted={text_muted}
         />

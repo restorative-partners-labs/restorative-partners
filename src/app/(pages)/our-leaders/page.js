@@ -38,8 +38,7 @@ const Team = () => {
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"."}
-            sectionTitle={"Our Leaders"}
+            sectionName={"Our Team"}
             sectionDesc={
               "Empowering communities through restorative justice practices, fostering healing and reconciliation for a brighter future"
             }
