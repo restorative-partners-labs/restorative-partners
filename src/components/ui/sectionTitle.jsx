@@ -50,7 +50,7 @@ const SectionTitle = ({
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: "1s" }}
         >
-          <h1 className="text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[324px]  lg:text-[200px] md:text-[170px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 ">
+          <h1 className="text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[300px]  lg:text-[175px] md:text-[150px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 ">
             {sectionName}
           </h1>
         </motion.div>

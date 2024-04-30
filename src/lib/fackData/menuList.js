@@ -73,6 +73,8 @@ export const menuList = [
             path: "/mentorship",
             desc: "Maximizing potential through supportive mentorship, fostering development.",
           },
+          { id: 3, name: "", path: "/", desc: "" },
+          { id: 3, name: "", path: "/", desc: "" },
         ],
       },
       {

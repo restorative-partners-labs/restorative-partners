@@ -46,31 +46,33 @@ const Team = () => {
         </div>
         <div className="container lg:pt-30 2sm:pt-20 pt-14">
           <div className="grid lg:grid-cols-3 2sm:grid-cols-2 gap-7">
-            {staff.map(
-              ({
-                id,
-                image,
-                firstName,
-                lastName,
-                role,
-                phone,
-                phoneExt,
-                email,
-                type,
-              }) => (
-                <LeaderCard
-                  key={id}
-                  img={image}
-                  firstName={firstName}
-                  lastName={lastName}
-                  position={role[0]}
-                  phone={phone}
-                  phoneExt={phoneExt}
-                  email={email}
-                  type={type}
-                />
-              )
-            )}
+            {staff
+              .filter(({ type }) => type === "staff")
+              .map(
+                ({
+                  id,
+                  image,
+                  firstName,
+                  lastName,
+                  role,
+                  phone,
+                  phoneExt,
+                  email,
+                  type,
+                }) => (
+                  <LeaderCard
+                    key={id}
+                    img={image}
+                    firstName={firstName}
+                    lastName={lastName}
+                    position={role[0]}
+                    phone={phone}
+                    phoneExt={phoneExt}
+                    email={email}
+                    type={type}
+                  />
+                )
+              )}
           </div>
         </div>
       </section>
