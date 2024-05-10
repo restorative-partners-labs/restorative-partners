@@ -3,7 +3,7 @@ import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 import AddressCard from '@/components/ui/cards/addressCard'
 import InputFiled from '@/components/ui/inputFiled'
 import SectionTitle from '@/components/ui/sectionTitle'
-import TextAreaFiled from '@/components/ui/ textAreaFiled'
+import TextAreaFiled from '@/components/ui/textAreaFiled'
 import { addressList } from '@/lib/fackData/addressList'
 import dynamic from 'next/dynamic'
 
