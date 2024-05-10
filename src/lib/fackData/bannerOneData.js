@@ -1,5 +1,5 @@
 import hero_1 from "@/assets/images/hero-1.jpg";
-import hero_2 from "@/assets/images/hero-2.jpg";
+import hero_2 from "@/assets/images/bridging_the_gap_2024.png";
 import hero_3 from "@/assets/images/hero-3.jpg";
 
 export const bannerOneData = [
@@ -15,11 +15,11 @@ export const bannerOneData = [
   {
     id: 2,
     title: "Bridging The Gap",
-    heading_one: "Community",
-    heading_two: "Events",
+    heading_one: "Events",
+    heading_two: "Join Us",
     banner_img: hero_2,
-    cta_link: "/restorative-justice/",
-    cta_text: "Learn More",
+    cta_link: "https://restorativepartners.wixsite.com/bridging-the-gap",
+    cta_text: "Bridging The Gap 2024",
   },
   {
     id: 3,
