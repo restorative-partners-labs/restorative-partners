@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "@/assets/icons/logo";
 import MenuIcon from "@/assets/icons/menuIcon";
 import { IoMdClose } from "react-icons/io";
-import { menuList } from "@/lib/fackData/menuList";
+import { mobileMenuList } from "@/lib/fackData/menuList";
 import Search from "@/assets/icons/search";
 import ShopCart from "@/assets/icons/shopCart";
 import { cn, countCartProductQuantity } from "@/lib/utils";
@@ -58,7 +58,7 @@ const MobileNavbar = () => {
                   </div>
                 </div>
                 <ul className="mt-7">
-                  {menuList.map(
+                  {mobileMenuList.map(
                     (
                       { id, isDropdown, name, path, isMegaMenu },
                       parentItem
@@ -108,20 +108,26 @@ const MobileNavbar = () => {
                                   : ""
                               }`}
                             >
-                              {isDropdown.map(({ id, name, path }) => {
-                                return (
-                                  <li key={id} className="leading-10">
-                                    <Link
-                                      data-id={parentItem.id}
-                                      onClick={() => setIsMenuActive(false)}
-                                      href={path}
-                                      className='dropdown-item text-secondary-foreground text-xl font-medium  inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full '
-                                    >
-                                      {name}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
+                              {isDropdown
+                                .filter(
+                                  (item) =>
+                                    item.name !== "" &&
+                                    item.path !== "/not-used"
+                                )
+                                .map(({ id, name, path }) => {
+                                  return (
+                                    <li key={id} className="leading-10">
+                                      <Link
+                                        data-id={parentItem.id}
+                                        onClick={() => setIsMenuActive(false)}
+                                        href={path}
+                                        className='dropdown-item text-secondary-foreground text-xl font-medium  inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full '
+                                      >
+                                        {name}
+                                      </Link>
+                                    </li>
+                                  );
+                                })}
                             </ul>
                           )}
                           {isMegaMenu && (

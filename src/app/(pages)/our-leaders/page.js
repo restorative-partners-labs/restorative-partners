@@ -38,7 +38,8 @@ const Team = () => {
       <section className="pt-20">
         <div className="container-fluid ">
           <SectionTitle
-            sectionName={"Our Team"}
+            sectionName={"Leaders"}
+            sectionTitle={"Staff"}
             sectionDesc={
               "Empowering communities through restorative justice practices, fostering healing and reconciliation for a brighter future"
             }
@@ -48,6 +49,48 @@ const Team = () => {
           <div className="grid lg:grid-cols-3 2sm:grid-cols-2 gap-7">
             {staff
               .filter(({ type }) => type === "staff")
+              .map(
+                ({
+                  id,
+                  image,
+                  firstName,
+                  lastName,
+                  role,
+                  phone,
+                  phoneExt,
+                  email,
+                  type,
+                }) => (
+                  <LeaderCard
+                    key={id}
+                    img={image}
+                    firstName={firstName}
+                    lastName={lastName}
+                    position={role[0]}
+                    phone={phone}
+                    phoneExt={phoneExt}
+                    email={email}
+                    type={type}
+                  />
+                )
+              )}
+          </div>
+        </div>
+      </section>
+      <section className="pt-20">
+        <div className="container-fluid ">
+          <SectionTitle
+            sectionName={"Leaders"}
+            sectionTitle={"Board of Directors"}
+            sectionDesc={
+              "The board of directors champions restorative justice, providing strategic leadership and vision to cultivate healing and unity within our communities"
+            }
+          />
+        </div>
+        <div className="container lg:pt-30 2sm:pt-20 pt-14">
+          <div className="grid lg:grid-cols-3 2sm:grid-cols-2 gap-7">
+            {staff
+              .filter(({ type }) => type === "board")
               .map(
                 ({
                   id,

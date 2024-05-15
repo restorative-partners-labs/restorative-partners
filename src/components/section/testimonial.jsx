@@ -12,38 +12,38 @@ import { cn } from "@/lib/utils";
 const testimonialData = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    position: "Modern Spaces Inc.",
+    name: "Erika DeHerrera",
+    position: "2024",
     review:
-      "I was truly impressed by the design expertise of Architronix. They turned my home into a stylish haven, and I couldn't be happier!",
+      "I want to give the highest rating to this organization for the way my life has changed so much for the better because of all the amazing people that have contributed their time, hard work and tireless energy for us all! Thank you from the bottom of my heart!!!!",
   },
   {
     id: 2,
-    name: "John Smith",
-    position: "Smith & Co. Architecture.",
+    name: "Christopher Wood",
+    position: "2023",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "Very helpful. Friendly staff. RP has been there for me and my children. I cannot begin to explain how grateful I am for Patty, Gabriel, Aiden, Solomon, and any folks in the woodworks doing what they do.",
   },
   {
     id: 3,
-    name: "Emily Roberts",
-    position: "UrbanLiving Interiors",
+    name: "Wendy Blacker",
+    position: "2019",
     review:
-      "Architronix Interiors transformed my office space into a functional yet aesthetically pleasing environment. Their attention to detail and innovative designs are top-notch",
+      "This place has saved so many lives... It is a safe place and a refuge for those whom have had doors slammed in their face due to past poor choices. The magic that Dave Davis and Sister Teressa preform here is nothing short of a miracle. I love all the people here and am eternally grateful for everything they do. This place is my family. This place is home.",
   },
   {
     id: 4,
-    name: "Sarah Johnson",
-    position: "Modern Spaces Inc.",
+    name: "Chris Waller",
+    position: "2020",
     review:
-      "I was truly impressed by the design expertise of Architronix. They turned my home into a stylish haven, and I couldn't be happier!",
+      "What can I say about restorative partners .well sister Teresa is such an asset to this community.she has helped me so many times I can't count never judging me she is a shining beacon of Hope in a world that can be such a hard place to see love in.her sober living facilitys are top notch.Gus is a jewel an a great role model to anyone he comes in contact with thank you all so much",
   },
   {
     id: 5,
-    name: "John Smith",
-    position: "Smith & Co. Architecture.",
+    name: "Emily",
+    position: "2019",
     review:
-      "Architronix exceeded my expectations. They took my vision and brought it to life, creating a breathtaking design that perfectly complements my",
+      "What an amazing agency! They have a real hear for people and wonderful programs for those incarcerated and those transitioning back to the community.",
   },
 ];
 const Testimonial = ({ text_muted, bg_muted }) => {
@@ -105,13 +105,13 @@ const Testimonial = ({ text_muted, bg_muted }) => {
                         >
                           {name}
                         </h5>
-                        <p
+                        {/* <p
                           className={cn(
                             `text-primary-foreground font-medium ${text_muted}`
                           )}
                         >
                           {position}
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>

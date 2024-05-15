@@ -15,7 +15,7 @@ const AboutTwo = () => {
             "Our professional staff and an army of volunteers offer programs, services, homes & relationships that empower mind-body-spirit & community transformation."
           }
         />
-        <div
+        {/* <div
           className={`bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0`}
         >
           <div className="container">
@@ -50,7 +50,7 @@ const AboutTwo = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

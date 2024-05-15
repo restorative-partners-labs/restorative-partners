@@ -14,6 +14,7 @@ const SectionTitle = ({
   bg_muted,
   link,
   button_text,
+  sectionNameSize,
 }) => {
   const [scroll, setScroll] = useState(false);
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -50,7 +51,11 @@ const SectionTitle = ({
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: "1s" }}
         >
-          <h1 className="text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[300px]  lg:text-[175px] md:text-[150px] sm:text-[140px] text-[100px] whitespace-nowrap font-extrabold leading-135 ">
+          <h1
+            className={`text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[${
+              sectionNameSize ? sectionNameSize : 300
+            }px]  lg:text-[175px] md:text-[150px] sm:text-[140px] text-[85px] whitespace-nowrap font-extrabold leading-135`}
+          >
             {sectionName}
           </h1>
         </motion.div>

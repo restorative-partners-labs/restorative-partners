@@ -46,17 +46,17 @@ const faqData = [
         `,
   },
 ];
-const Faq = ({ className }) => {
+const Faq = ({ className, faqData, title }) => {
   return (
     <section className={`pt-20 ${className}`}>
       <div className="container-fluid">
-        <SectionTitle sectionName={"FAQ"} />
+        <SectionTitle sectionName={title ? title : ""} />
       </div>
-      <div className="container lg:pt-30 2sm:pt-20 pt-14">
-        <div className="grid lg:grid-cols-[40%_auto] items-center gap-17.5">
-          <div>
+      <div className="container lg:pt-30 2sm:pt-20 pt-14 lg:pb-30">
+        <div className="grid lg:grid-cols-[100%_auto] items-center gap-17.5">
+          {/* <div>
             <SectionSidebarImg img={faq_img} section_name={"faq-background"} />
-          </div>
+          </div> */}
 
           <div>
             <Accordion type="single" defaultValue="1" collapsible>
@@ -67,7 +67,7 @@ const Faq = ({ className }) => {
                       {question}
                     </AccordionTrigger>
                     <AccordionContent className="mt-[22px] sm:px-12.5 px-6">
-                      {ans}
+                      <div dangerouslySetInnerHTML={{ __html: ans }} />
                     </AccordionContent>
                   </AccordionItem>
                 );

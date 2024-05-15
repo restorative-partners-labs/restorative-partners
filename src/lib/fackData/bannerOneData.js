@@ -1,6 +1,7 @@
-import hero_1 from "@/assets/images/hero-1.jpg";
+import hero_1 from "@/assets/images/rj-hero-2.jpg";
 import hero_2 from "@/assets/images/bridging_the_gap_2024.png";
-import hero_3 from "@/assets/images/hero-3.jpg";
+import hero_3 from "@/assets/images/creating-impact.jpg";
+import hero_4 from "@/assets/images/rj-hero-1.jpg";
 
 export const bannerOneData = [
   {
@@ -29,5 +30,14 @@ export const bannerOneData = [
     banner_img: hero_3,
     cta_link: "/annual-report/2023-impact-report",
     cta_text: "2023 Impact Report",
+  },
+  {
+    id: 3,
+    title: "Creating Community Impact",
+    heading_one: "In-Custody",
+    heading_two: "Programs",
+    banner_img: hero_4,
+    cta_link: "/in-custody-programs",
+    cta_text: "In-Custody Programs",
   },
 ];

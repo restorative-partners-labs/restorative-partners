@@ -71,12 +71,16 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                     "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
                   }
                 >
-                  Learn More About Our Mission{" "}
-                  <RightArrow width={"35"} height={"22"} />
+                  Our Mission <RightArrow width={"35"} height={"22"} />
                 </ButtonOutline>
               </Link>
             </div>
-            <VideoPlay img={video_thumb} />
+            <VideoPlay
+              img={video_thumb}
+              video_url={
+                "https://restorativepartners.org/wp-content/uploads/2020/04/restorative-partners-drug-and-alcohol-header-video.mp4"
+              }
+            />
           </div>
         </div>
       </div>

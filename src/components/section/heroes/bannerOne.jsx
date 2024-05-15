@@ -37,9 +37,9 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        speed={500}
+        speed={400}
         autoplay={{
-          delay: 4000,
+          delay: 6000,
         }}
         modules={[Pagination, Navigation, Autoplay]}
       >
@@ -61,7 +61,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
                   <div className="container ">
                     <div className="xl:pt-[200px] pt-[150px] pb-[250px]">
                       <div>
-                        <h1 className="xl:text-[200px] lg:text-[170px] 2sm:text-[130px] sm:text-[100px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative">
+                        <h1 className="xl:text-[200px] lg:text-[170px] 2sm:text-[130px] sm:text-[100px] xm:text-6xl text-5xl leading-[100%] font-extrabold relative">
                           <span
                             className={cn(
                               `text-primary-foreground animate-fill after:${bg_muted} ${text_muted}`

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import about_img from "@/assets/images/about-image.jpg";
+import about_img from "@/assets/images/rj-circle.png";
 import SectionTitle from "../../ui/sectionTitle";
 import { cardSlideAnimation, cn } from "@/lib/utils";
 import { useInView } from "react-intersection-observer";

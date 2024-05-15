@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RightArrow from "@/assets/icons/rightArrow";
-import video_thumb from "@/assets/images/video-image.jpg";
+import video_thumb from "@/assets/images/rj-home-video-thumb.png";
 import SectionTitle from "../ui/sectionTitle";
 import { cn } from "@/lib/utils";
 import VideoPlay from "../ui/videoPlay";
@@ -57,12 +57,16 @@ const OurPledge = ({ text_muted, bg_muted, after_bg_muted }) => {
                     "border-secondary text-secondary-foreground sm:px-10 px-3 after:hover:bg-secondary after:left-0 hover:text-primary-foreground"
                   }
                 >
-                  Learn More About Our Organization{" "}
-                  <RightArrow width={"35"} height={"22"} />
+                  Our Organization <RightArrow width={"35"} height={"22"} />
                 </ButtonOutline>
               </Link>
             </div>
-            <VideoPlay img={video_thumb} />
+            <VideoPlay
+              img={video_thumb}
+              video_url={
+                "https://restorativepartners.org/wp-content/uploads/2020/04/restorative-partners-home-video-1.mp4"
+              }
+            />
           </div>
         </div>
       </div>

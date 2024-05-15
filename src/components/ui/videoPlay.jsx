@@ -8,7 +8,7 @@ import "/node_modules/react-modal-video/scss/modal-video.scss";
 import useOverflowHidden from "@/hooks/useOverflowHidden";
 import { cardSlideAnimation } from "@/lib/utils";
 
-const VideoPlay = ({ img }) => {
+const VideoPlay = ({ img, video_url }) => {
   const [isOpen, setOpen] = useState(false);
   useOverflowHidden(isOpen);
   return (
@@ -30,7 +30,7 @@ const VideoPlay = ({ img }) => {
         />
         <ModalVideo
           channel="custom"
-          url="https://restorativepartners.org/wp-content/uploads/2020/04/restorative-partners-drug-and-alcohol-header-video.mp4"
+          url={video_url}
           isOpen={isOpen}
           videoId="lfDZJqSrIuk"
           onClose={() => setOpen(false)}

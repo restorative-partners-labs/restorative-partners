@@ -1,5 +1,5 @@
 import React from "react";
-import feedback_bg from "@/assets/images/feedback-image.jpg";
+import feedback_bg from "@/assets/images/feedback-image-rp.jpg";
 import RightArrow from "@/assets/icons/rightArrow";
 import ButtonFill from "../ui/buttons/buttonFill";
 import Link from "next/link";

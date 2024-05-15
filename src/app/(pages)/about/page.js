@@ -2,6 +2,8 @@ import AboutTwo from "@/components/section/about/aboutTwo";
 import Expertise from "@/components/section/expertise";
 import Feedback from "@/components/section/feedback";
 import AboutGoals from "@/components/section/about/aboutGoals";
+import { faqAboutData } from "@/lib/fackData/faqData";
+import Faq from "@/components/section/faq";
 
 export const metadata = {
   title: "About Restorative Partners",
@@ -11,7 +13,7 @@ const AboutUs = () => {
   return (
     <>
       <AboutTwo />
-      <AboutGoals />
+      <Faq faqData={faqAboutData} />
       <Feedback />
     </>
   );

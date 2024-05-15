@@ -1,13 +1,15 @@
 import React from "react";
-import section_bg from "@/assets/images/section-bg.jpg";
+import section_bg from "@/assets/images/services-header-bg.jpg";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { servicesData } from "@/lib/fackData/servicesData";
 import ServiceCard from "@/components/ui/cards/serviceCard";
 import Counter from "@/components/ui/counter";
 import AboutThree from "@/components/section/about/aboutThree";
 import Expertise from "@/components/section/expertise";
-import Faq from "@/components/section/faq";
+
 import Feedback from "@/components/section/feedback";
+import { faqData } from "@/lib/fackData/faqData";
+import Faq from "@/components/section/faq";
 
 export const metadata = {
   title: "Architronix -- Services",
@@ -40,7 +42,7 @@ const Services = () => {
         </div>
       </div>
 
-      <Faq />
+      <Faq faqData={faqData} title="FAQ" />
       <Feedback />
     </>
   );

@@ -10,12 +10,12 @@ export const eventsData = [
     project_img: community_workshop_06082024,
     project_desc:
       "Are you interested in helping Transform Lives & Stregthen Communities! Sign-up Today!",
-    client: "Sogeprom",
+    client: "Workshop",
     area: "14,891 m²",
     project_year: "June 8, 2024",
     project_type: "Interior design",
     link: "/project-single",
-    location: "Restorative Partners Headquarter, San Luis Obispo, CA",
+    location: "RP Headquarters, SLO, CA",
   },
   {
     id: 2,
@@ -23,12 +23,12 @@ export const eventsData = [
     project_img: bridging_the_gap_2024,
     project_desc:
       "For more than a dozen years, Restorative Partners, a local non-profit, has dedicated itself to transforming lives within the justice-involved community while also engaging and educating the wider community. Recognizing the importance of bridging gaps between those directly involved and others, we believe reshaping our nation's justice approach requires strong community partnerships.",
-    client: "Sogeprom",
+    client: "Fundraiser",
     area: "14,891 m²",
     project_year: "August 16, 2024",
     project_type: "Interior design",
     link: "https://restorativepartners.wixsite.com/bridging-the-gap",
-    location: "Fremont Theatre, San Luis Obispo, CA",
+    location: "Fremont Theatre, SLO, CA",
   },
 
   //   {
