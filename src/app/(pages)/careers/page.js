@@ -49,7 +49,7 @@ const Career = () => {
       </section>
       {/* -------- compnay feature end */}
       <AboutThree/>
-      <Faq className={"pb-20"}/>
+      {/* <Faq className={"pb-20"}/> */}
     </>
   )
 }

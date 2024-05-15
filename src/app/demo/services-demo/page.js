@@ -33,7 +33,7 @@ const Services = () => {
       <AboutThree />
       <Counter />
       <Expertise />
-      <Faq />
+      {/* <Faq /> */}
       <Feedback />
     </>
   )
