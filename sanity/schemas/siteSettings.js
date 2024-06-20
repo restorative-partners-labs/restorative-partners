@@ -21,8 +21,7 @@ export const siteSettings = {
       name: 'mainImage',
       type: 'image',
       title: 'Main Site Image',
-      description:
-        'An image used site-wide, for example, as a default social sharing image.',
+      description: 'An image used site-wide, for example, as a default social sharing image.',
     },
     {
       name: 'social',
@@ -48,5 +47,55 @@ export const siteSettings = {
         },
       ],
     },
+    {
+      name: 'contacts',
+      title: 'Contacts',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'type',
+              type: 'string',
+              title: 'Type',
+              description: 'The type of contact information (email, phone, fax).',
+              options: {
+                list: [
+                  { title: 'Email', value: 'email' },
+                  { title: 'Phone', value: 'phone' },
+                  { title: 'Fax', value: 'fax' },
+                ],
+              },
+            },
+            {
+              name: 'department',
+              type: 'string',
+              title: 'Department',
+              description: 'The department this contact is associated with.',
+              options: {
+                list: [
+                  { title: 'In-Custody', value: 'In-Custody' },
+                  { title: 'Mentorship', value: 'Mentorship' },
+                  { title: 'Housing', value: 'Housing' },
+                  { title: 'Treatment Services', value: 'Treatment Services' },
+                  { title: 'Events', value: 'Events' },
+                  { title: 'Careers', value: 'Careers' },
+                  { title: 'Volunteer', value: 'Volunteer' },
+                  { title: 'System Navigation', value: 'System Navigation' },
+                  { title: 'Juvenile Hall', value: 'Juvenile Hall' },
+                ],
+              },
+            },
+            {
+              name: 'value',
+              type: 'string',
+              title: 'Value',
+              description: 'The contact information value (e.g., email address, phone number).',
+            },
+          ],
+        },
+      ],
+    },
   ],
-}
+};
