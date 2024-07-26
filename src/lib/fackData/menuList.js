@@ -61,18 +61,6 @@ export const menuList = [
             path: "/in-custody-programs",
             desc: "Support from concept to completion, fostering rehabilitation and growth within facilities.",
           },
-          {
-            id: 2,
-            name: "System Navigation",
-            path: "/system-navigation",
-            desc: "Assistance navigating legal and administrative systems, ensuring fair treatment and access to resources.",
-          },
-          {
-            id: 3,
-            name: "Mentorship",
-            path: "/mentorship",
-            desc: "Maximizing potential through supportive mentorship, fostering development.",
-          },
           { id: 3, name: "", path: "/not-used", desc: "" },
           { id: 3, name: "", path: "/not-used", desc: "" },
         ],
@@ -82,21 +70,9 @@ export const menuList = [
         menus: [
           {
             id: 4,
-            name: "Juvenile Hall Programs",
+            name: "ReEntry Resources",
             path: "/in-custody-programs/juvenile-hall",
-            desc: "Tailored interventions addressing the needs of young individuals in custody, promoting rehabilitation and reintegration.",
-          },
-          {
-            id: 5,
-            name: "Treatment Services",
-            path: "/treatment",
-            desc: "Holistic treatment addressing root causes of behavior, promoting healing and recovery.",
-          },
-          {
-            id: 6,
-            name: "Workforce Development",
-            path: "/workforce-development",
-            desc: "Equipping individuals with skills for the workforce, promoting stability and reducing recidivism.",
+            desc: "ReEntry Drop-in Resource Center offers system navigation, workforce development, personalized case management, Cen Cal/Cal Aim programs, culinary education opportunities, and links to treatment resources.",
           },
         ],
       },
@@ -105,15 +81,31 @@ export const menuList = [
         menus: [
           {
             id: 7,
-            name: "Reentry Resources",
-            path: "/reentry-resources",
-            desc: "Supportive services facilitating successful reentry into the community, including employment assistance and housing support.",
-          },
-          {
-            id: 8,
             name: "Housing",
             path: "/housing",
-            desc: "Housing solutions and support services ensuring stable and safe housing, promoting stability and reducing recidivism.",
+            desc: "Supportive services facilitating successful reentry into the community, including employment assistance and housing support.",
+          },
+        ],
+      },
+      {
+        id: 4,
+        menus: [
+          {
+            id: 9,
+            name: "Treatment Services",
+            path: "/treatment",
+            desc: "Supportive services facilitating successful reentry into the community, including employment assistance and housing support.",
+          },
+        ],
+      },
+      {
+        id: 5,
+        menus: [
+          {
+            id: 9,
+            name: "Social Enterprises",
+            path: "/social-enterprises",
+            desc: "Supportive services facilitating successful reentry into the community, including employment assistance and housing support.",
           },
         ],
       },
@@ -152,13 +144,45 @@ export const menuList = [
       },
     ],
   },
-  // {
-  //   id: 5,
-  //   name: "Blog",
-  //   path: "/blog",
-  //   isMegaMenu: false,
-  //   isDropdown: false,
-  // },
+  {
+    id: 5,
+    name: "Contact",
+    path: "/contact",
+    isMegaMenu: false,
+    isDropdown: [
+      {
+        id: 1,
+        name: "Contact Info",
+        path: "/contact",
+        desc: "Everything from concept to completion",
+      },
+      {
+        id: 2,
+        name: "(805)555-5555",
+        path: "/restorative-justice",
+        desc: "Everything from concept to completion",
+      },
+
+      {
+        id: 3,
+        name: "Instagram",
+        path: "https://www.instagram.com/restorativepartners/",
+        desc: "Everything from concept to completion",
+      },
+      {
+        id: 4,
+        name: "Facebook",
+        path: "https://www.facebook.com/RestorativePartners/",
+        desc: "Everything from concept to completion",
+      },
+      {
+        id: 5,
+        name: "LinkedIn",
+        path: "https://www.linkedin.com/company/restorative-partners",
+        desc: "Everything from concept to completion",
+      },
+    ],
+  },
   {
     id: 6,
     name: "Donate",

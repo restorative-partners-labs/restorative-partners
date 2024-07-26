@@ -21,20 +21,20 @@ import RightArrow from '@/assets/icons/rightArrow'
 const bannerData = [
     {
         id: 1,
-        title: "Elegant Design Showcase",
+        title: "Restorative Justice",
         heading: "<span class='text-primary-foreground'> Elegance </span> <span class='outline-text'> Redefined </span>",
         banner_img: hero_8,
     },
     {
         id: 2,
-        title: "Designing Interior Elegance",
+        title: "Community Impact",
         heading: "<span class='text-primary-foreground'> Elegance </span> <span class='outline-text'> Redefined </span>",
         banner_img: hero_2,
     },
     {
         id: 3,
-        title: "Crafting Interior Brilliance",
-        heading: "<span class='text-primary-foreground'> Elegance </span> <span class='outline-text'> Redefined </span>",
+        title: "Bridging The Gap",
+        heading: "<span class='text-primary-foreground pl-20px'> Elegance </span> <span class='outline-text pl-20px'> Redefined </span>",
         banner_img: hero_3,
     },
 ]
@@ -42,17 +42,17 @@ const bannerBottomContent = [
     {
         id: 1,
         banner_img: hero_5,
-        title: "Space Alchemy"
+        title: "Community"
     },
     {
         id: 2,
         banner_img: hero_6,
-        title: "Design Symphony"
+        title: "Services"
     },
     {
         id: 3,
         banner_img: hero_7,
-        title: "Personalized Elegance"
+        title: "Join Us!"
     },
 
 ]
@@ -62,7 +62,7 @@ const BannerTwo = () => {
         clickable: true,
         el: ".hero-pagination",
         renderBullet: function (index, className) {
-            return `<span class='${className} text-white translate-y-16 opacity-0 absolute h-0 leading-[90%] [font-size:_clamp(60px,10vw,150px)] font-extrabold lg:text-right'>${bannerData[index].title}</span>`;
+            return `<span class='${className} text-white translate-y-16 opacity-0 absolute h-0 leading-[90%] [font-size:_clamp(60px,10vw,150px)] font-extrabold lg:text-right pr-50px'>${bannerData[index].title}</span>`;
         },
     };
     return (

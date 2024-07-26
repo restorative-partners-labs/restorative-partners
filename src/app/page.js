@@ -21,6 +21,8 @@ import { bannerOneData } from "@/lib/fackData/bannerOneData";
 import HeaderOne from "@/components/header/headerOne";
 import Footer from "@/components/footer";
 import OurPledge from "@/components/section/ourPledge";
+import HeaderTwo from "@/components/header/headerTwo";
+import BannerTwo from "@/components/section/heroes/bannerTwo";
 
 export const metadata = {
   title: "Restorative Partners",
@@ -31,8 +33,9 @@ export const metadata = {
 const Home1 = () => {
   return (
     <>
-      <HeaderOne />
-      <BannerOne data={bannerOneData} />
+      <HeaderTwo />
+      <BannerTwo />
+
       <AboutOne />
       <Counter />
       {/* <Gallery /> */}
