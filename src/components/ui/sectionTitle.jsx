@@ -35,6 +35,7 @@ const SectionTitle = ({
       ["0%", `${scrollHeight / 3}px`]
     );
   }
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (window.scrollY > 200) {
@@ -45,18 +46,19 @@ const SectionTitle = ({
       }
     });
   }, []);
+
   return (
     <>
-      <div ref={containerRef} className="overflow-x-hidden">
+      <div ref={containerRef} className="overflow-x-hidden py-16">
         <motion.div
           style={{ translateX: scrollValue, transitionDuration: "1s" }}
         >
           <h1
-            className={`text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[${
+            className={`pb-24 text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[${
               sectionNameSize ? sectionNameSize : 300
             }px]  lg:text-[175px] md:text-[150px] sm:text-[140px] text-[85px] whitespace-nowrap font-extrabold leading-135`}
           >
-            {sectionName}
+            {sectionName || <span>&nbsp;</span>}
           </h1>
         </motion.div>
       </div>

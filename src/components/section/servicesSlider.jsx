@@ -19,10 +19,9 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
     <section className="pt-20">
       <div className="container-fluid">
         <SectionTitle
-          sectionName={"Services"}
-          sectionTitle={"Explore Our Program and Service Offerings"}
+          sectionTitle={"Discover Our Programs and Services"}
           sectionDesc={
-            "Exploring Programs and Services We Proudly Offer to Our Clients on their Restorative Justice Journey"
+            "Learn more about the support we proudly offer to our clients on their restorative justice journey"
           }
           link={"/services"}
           button_text={"View All Programs & Services"}

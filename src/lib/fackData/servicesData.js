@@ -3,62 +3,38 @@ export const servicesData = [
     id: "01",
     service_name: "In Custody Programs",
     service_desc:
-      "Support from concept to completion, fostering rehabilitation and growth within facilities.",
+      "Offering education, vocational training, and counseling services to individuals while they are in custody to aid in their personal growth and preparation for reentry into society.",
     link: "/in-custody-programs",
   },
   {
     id: "02",
-    service_name: "System Navigation",
-    service_desc:
-      "Assistance navigating legal and administrative systems, ensuring fair treatment and access to resources.",
-    link: "/system-navigation",
-  },
-  {
-    id: "03",
-    service_name: "Mentorship",
-    service_desc:
-      "Maximizing potential through supportive mentorship, fostering development.",
-
-    link: "/mentorship",
-  },
-  {
-    id: "04",
-    service_name: "Juvenile Hall Programs",
-    service_desc:
-      "Tailored interventions addressing the needs of young individuals in custody, promoting rehabilitation and reintegration.",
-
-    link: "/juvenile-hall-programs",
-  },
-  {
-    id: "05",
-    service_name: "Treatment Services",
-    service_desc:
-      "Holistic treatment addressing root causes of behavior, promoting healing and recovery.",
-
-    link: "/treatment-services",
-  },
-  {
-    id: "06",
-    service_name: "Workforce Development",
-    service_desc:
-      "Equipping individuals with skills for the workforce, promoting stability and reducing recidivism.",
-
-    link: "/workforce-development",
-  },
-  {
-    id: "07",
     service_name: "ReEntry Resources",
     service_desc:
-      "Supportive services facilitating successful reentry into the community, including employment assistance and housing support.",
-
+      "Providing support and resources such as job training, employment assistance, and legal aid to help formerly incarcerated individuals successfully transition back into their communities.",
     link: "/reentry-resources",
   },
   {
-    id: "08",
+    id: "03",
     service_name: "Housing",
     service_desc:
-      "Housing solutions and support services ensuring stable and safe housing, promoting stability and reducing recidivism.",
+      "Assisting with finding safe and stable housing options for individuals who are reentering society, ensuring they have a secure place to live as they rebuild their lives.",
 
     link: "/housing",
+  },
+  {
+    id: "04",
+    service_name: "Treatment Services",
+    service_desc:
+      "Offering access to mental health services, substance abuse treatment, and other healthcare resources to support the well-being and rehabilitation of individuals affected by the justice system.",
+
+    link: "/treatment",
+  },
+  {
+    id: "05",
+    service_name: "Social Enterprises",
+    service_desc:
+      "/social-enterprises",
+
+    link: "/workforce-development",
   },
 ];

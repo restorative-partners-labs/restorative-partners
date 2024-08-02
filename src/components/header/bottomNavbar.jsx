@@ -34,12 +34,7 @@ const BottomNavbar = ({ linkColor }) => {
             href="/"
             className={cn(`logo text-primary-foreground ${linkColor}`)}
           >
-            <Image
-              src={img}
-              loading="lazy"
-              width={200}
-              height={30}
-            />
+            <Image src={img} loading="lazy" width={200} height={30} />
           </Link>
         </div>
         <nav>
@@ -51,13 +46,13 @@ const BottomNavbar = ({ linkColor }) => {
                     href={path}
                     data-id={id}
                     className={cn(
-                      `nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2  group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`
+                      `nav-link text-xl font-medium px-7 py-[34px] pb-6 flex items-center gap-2 group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`
                     )}
                   >
                     {name}
                     {(isDropdown || isMegaMenu) && (
                       <span
-                        className={` transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-secondary-foreground`}
+                        className={`transition-all duration-500 rotate-180 group-hover:rotate-0 group-hover:text-secondary-foreground`}
                       >
                         <svg
                           width="12"
@@ -95,13 +90,13 @@ const BottomNavbar = ({ linkColor }) => {
               onClick={() => setCartActive(true)}
             >
               {/* <ShopCart height={"24"} width={"24"} />
-              {products.length ? (
-                <span className="font-medium flex items-center justify-center text-secondary-foreground text-sm absolute -top-3 -right-4 w-6 h-6 bg-primary rounded-full">
-                  {countCartProductQuantity(products)}
-                </span>
-              ) : (
-                ""
-              )} */}
+      {products.length ? (
+        <span className="font-medium flex items-center justify-center text-secondary-foreground text-sm absolute -top-3 -right-4 w-6 h-6 bg-primary rounded-full">
+          {countCartProductQuantity(products)}
+        </span>
+      ) : (
+        ""
+      )} */}
             </li>
           </ul>
         </nav>
