@@ -25,7 +25,7 @@ const TeamSingle = () => {
             sectionName={"Executive Director"}
             sectionTitle={"Sister Theresa"}
             sectionDesc={"Her Vision Embodied"}
-            sectionNameSize={30}
+            sectionNameSize={100}
           />
         </div>
         <div className="container lg:pt-30 2sm:pt-20 pt-14">

@@ -1,11 +1,12 @@
 import Image from "next/image";
 
-import service_img from "@/assets/images/service-paint-image.jpg";
+import service_img from "@/assets/images/in-custody-services.jpg";
 import SectionTitle from "@/components/ui/sectionTitle";
 import Title from "@/components/ui/title";
 import ServiceSingleSidebar from "@/components/ui/serviceSingleSidebar";
 import Feedback from "@/components/section/feedback";
 import ProjectSingleSliderOne from "@/components/section/projectSingle/projectSingleSliderOne";
+import Link from "next/link";
 
 export const metadata = {
   title: "Restorative Partners -- In-Custody Programs",
@@ -43,54 +44,64 @@ const ServiceSingle = () => {
               <div className="pt-12.5">
                 {/* <Title title_text={"What's Included"} /> */}
                 <ul>
-                  <li>
-                    <h5 className="font-bold">AA & NA</h5>
-                    <p className="mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10">
-                      Community AA and NA Members provide 12 step Alcoholics
-                      Anonymous and Narcotics Anonymous groups.{" "}
-                    </p>
-                  </li>
-                  <li className="pt-7.5">
-                    <h5 className="font-bold">Art Program</h5>
-                    <p className="mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10">
-                      Art classes and projects for the youth to encourage
-                      creative self-expression and a way to process their life
-                      experiences.
-                    </p>
-                  </li>
-                  <li className="pt-7.5">
-                    <h5 className="font-bold">Birthday Event</h5>
-                    <p className="mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10">
-                      Every youth in the facility is treated with a cupcake and
-                      those with birthdays receive a card and song from the
-                      volunteers.
-                    </p>
-                  </li>
-                  <li className="pt-7.5">
-                    <h5 className="font-bold">Book Club</h5>
-                    <p className="mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10">
-                      Book club meets to discuss books chosen for their
-                      relevance, appeal, and educational value. Funding for
-                      these books is provided by generous volunteers, United Way
-                      Youth Board and donations from the SLO County Public
-                      Library.
-                    </p>
-                  </li>
-                  <li className="pt-7.5">
-                    <h5 className="font-bold">Chess Club</h5>
-                    <p className="mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10">
-                      Chess club provides youth with a stimulating yet rewarding
-                      activity that improves memory, problem-solving skills, and
-                      ability to think ahead.
-                    </p>
-                  </li>
+                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          1
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Juvenile Hall
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          2
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          California Men's Colony
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                    {" "}
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          3
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          SLO County Jail
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
                 </ul>
               </div>
-
             </div>
             <ServiceSingleSidebar />
           </div>
-          <ProjectSingleSliderOne />
+          {/* <ProjectSingleSliderOne /> */}
         </div>
       </section>
       <Feedback />

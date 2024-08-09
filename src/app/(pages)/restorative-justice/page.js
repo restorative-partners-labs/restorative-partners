@@ -10,19 +10,20 @@ import { faqRestorativeJusticeData } from "@/lib/fackData/faqData";
 
 export const metadata = {
   title: "Restorative Partners - Restorative Justice",
-  description: "Restorative Justice FAQ",
+  description: "About Restorative Justice",
 };
 const AboutUs = () => {
   return (
     <>
       <SectionTitle
-        sectionName={"FAQ"}
+        sectionName={"About"}
         sectionTitle={"Restorative Justice"}
         sectionDesc={
           "Howard Zehr, often referred to as the “godfather” of Restorative Justice (RJ) in the West, traces RJ’s emergence to the 1970s as “an effort to correct some of the weaknesses of the western legal system while building on its strengths. "
         }
       />
       <Faq faqData={faqRestorativeJusticeData} />
+
       <Feedback />
     </>
   );

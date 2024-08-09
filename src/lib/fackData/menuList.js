@@ -28,20 +28,20 @@ export const menuList = [
 
       {
         id: 3,
+        name: "Sister Theresa",
+        path: "/sister-theresa",
+        desc: "Everything from concept to completion",
+      },
+      {
+        id: 4,
         name: "Our Leaders",
         path: "/our-leaders",
         desc: "Everything from concept to completion",
       },
       {
-        id: 4,
+        id: 5,
         name: "Annual Reports",
         path: "/annual-reports",
-        desc: "Everything from concept to completion",
-      },
-      {
-        id: 5,
-        name: "Mission Statement",
-        path: "/mission",
         desc: "Everything from concept to completion",
       },
     ],
@@ -71,7 +71,7 @@ export const menuList = [
           {
             id: 4,
             name: "ReEntry Resources",
-            path: "/in-custody-programs/juvenile-hall",
+            path: "/reentry-resources",
             desc: "Providing support and resources such as job training, employment assistance, and legal aid to help formerly incarcerated individuals successfully transition back into their communities.",
           },
         ],
@@ -221,20 +221,20 @@ export const mobileMenuList = [
 
       {
         id: 3,
+        name: "Sister Theresa",
+        path: "/sister-theresa",
+        desc: "Everything from concept to completion",
+      },
+      {
+        id: 4,
         name: "Our Leaders",
         path: "/our-leaders",
         desc: "Everything from concept to completion",
       },
       {
-        id: 4,
+        id: 5,
         name: "Annual Reports",
         path: "/annual-reports",
-        desc: "Everything from concept to completion",
-      },
-      {
-        id: 5,
-        name: "Mission Statement",
-        path: "/mission",
         desc: "Everything from concept to completion",
       },
     ],

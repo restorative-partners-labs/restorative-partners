@@ -55,8 +55,10 @@ const SectionTitle = ({
         >
           <h1
             className={`pb-24 text-transparent webkit-text-stroke-width-1 webkit-text-stroke-primary opacity-50 xl:text-[${
-              sectionNameSize ? sectionNameSize : 300
-            }px]  lg:text-[175px] md:text-[150px] sm:text-[140px] text-[85px] whitespace-nowrap font-extrabold leading-135`}
+              sectionNameSize ? sectionNameSize : 10
+            }px]  lg:text-[${
+              sectionNameSize ? sectionNameSize : 10
+            }px]  md:text-[150px] sm:text-[140px] text-[85px] whitespace-nowrap font-extrabold leading-135`}
           >
             {sectionName || <span>&nbsp;</span>}
           </h1>

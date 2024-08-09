@@ -48,21 +48,14 @@ const faqData = [
 ];
 const Faq = ({ className, faqData, title }) => {
   return (
-    <section className={`pt-20 ${className}`}>
-      <div className="container-fluid">
-        <SectionTitle sectionName={title ? title : ""} />
-      </div>
+    <section className={`pt-5 ${className}`}>
       <div className="container lg:pt-30 2sm:pt-20 pt-14 lg:pb-30">
         <div className="grid lg:grid-cols-[100%_auto] items-center gap-17.5">
-          {/* <div>
-            <SectionSidebarImg img={faq_img} section_name={"faq-background"} />
-          </div> */}
-
           <div>
             <Accordion type="single" defaultValue="1" collapsible>
               {faqData.map(({ id, ans, question }) => {
                 return (
-                  <AccordionItem value={id} className="mb-2.5">
+                  <AccordionItem key={id} value={id} className="mb-2.5">
                     <AccordionTrigger className="text-xl font-semibold border border-primary sm:px-12.5 px-6">
                       {question}
                     </AccordionTrigger>
