@@ -12,8 +12,9 @@ import { faqData } from "@/lib/fackData/faqData";
 import Faq from "@/components/section/faq";
 
 export const metadata = {
-  title: "Architronix -- Services",
-  description: "Architronix is a next js and tailwind css website",
+  title: "Restorative Partners - Services",
+  description:
+    "Learn more about the support we proudly offer to our clients on their restorative justice journey",
 };
 
 const Services = () => {
@@ -29,7 +30,7 @@ const Services = () => {
       </section>
       {/* -------- service list */}
       <div className="container-fluid lg:pt-20 2sm:pt-16 pt-10">
-        <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-8 px-4 2sm:px-0">
+        <div className="grid 2xl:grid-cols-5 lg:grid-cols-3 sm:grid-cols-2 gap-8 px-4 2sm:px-0">
           {servicesData.map(({ id, service_desc, service_name, link }) => (
             <ServiceCard
               key={id}

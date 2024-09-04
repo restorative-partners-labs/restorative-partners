@@ -42,7 +42,7 @@ const ServicesSlider = ({ text_muted, bg_muted }) => {
                 slidesPerView: 3,
               },
               1400: {
-                slidesPerView: 4,
+                slidesPerView: 5,
               },
             }}
             pagination={pagination}

@@ -58,7 +58,7 @@ export const menuList = [
           {
             id: 1,
             name: "In Custody Programs",
-            path: "/in-custody-programs",
+            path: "/services/in-custody-programs",
             desc: "Offering education, vocational training, and counseling services to individuals while they are in custody to aid in their personal growth and preparation for reentry into society.",
           },
           // { id: 3, name: "", path: "/not-used", desc: "" },
@@ -71,7 +71,7 @@ export const menuList = [
           {
             id: 4,
             name: "ReEntry Resources",
-            path: "/reentry-resources",
+            path: "/services/reentry-resources",
             desc: "Providing support and resources such as job training, employment assistance, and legal aid to help formerly incarcerated individuals successfully transition back into their communities.",
           },
         ],
@@ -82,7 +82,7 @@ export const menuList = [
           {
             id: 7,
             name: "Housing",
-            path: "/housing",
+            path: "/services/housing",
             desc: "Assisting with finding safe and stable housing options for individuals who are reentering society, ensuring they have a secure place to live as they rebuild their lives.",
           },
         ],
@@ -93,7 +93,7 @@ export const menuList = [
           {
             id: 9,
             name: "Treatment Services",
-            path: "/treatment",
+            path: "/services/treatment",
             desc: "Offering access to mental health services, substance abuse treatment, and other healthcare resources to support the well-being and rehabilitation of individuals affected by the justice system.",
           },
         ],
@@ -104,7 +104,7 @@ export const menuList = [
           {
             id: 9,
             name: "Social Enterprises",
-            path: "/social-enterprises",
+            path: "/services/social-enterprises",
             desc: "Creating business opportunities and employment pathways through social enterprises that help individuals gain work experience, develop skills, and achieve economic independence.",
           },
         ],

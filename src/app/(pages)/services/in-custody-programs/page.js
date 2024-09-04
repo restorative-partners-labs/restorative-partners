@@ -44,7 +44,7 @@ const ServiceSingle = () => {
               <div className="pt-12.5">
                 {/* <Title title_text={"What's Included"} /> */}
                 <ul>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/in-custody-programs/juvenile-hall"}>
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
                         strokeWidth="1"
@@ -61,7 +61,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/in-custody-programs/ca-mens-colony"}>
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
                         strokeWidth="1"
@@ -78,7 +78,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/in-custody-programs/slo-county-jail"}>
                     {" "}
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg

@@ -96,10 +96,7 @@ const BannerTwo = () => {
                   <span className="text-base">Who we are</span>
                 </ButtonOutline>
               </Link>
-              <Link
-                href={"/services"}
-                className="lg:mt-10 mt-2 inline-block"
-              >
+              <Link href={"/services"} className="lg:mt-10 mt-2 inline-block">
                 <ButtonFill
                   className={
                     "px-[35px] sm:py-2.5 py-2.5 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground"
@@ -176,6 +173,7 @@ const BannerTwo = () => {
                   alt="banner-bottom-bg"
                   layout="fill"
                   objectFit="cover"
+                  className="after:bg-[#d2e0d9a6] after:absolute after:left-0 after:top-0 after:w-full after:h-full "
                 />
                 <h4 className="text-secondary-foreground 2xl:text-[82px] md:text-6xl text-5xl leading-120 font-extrabold absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-center">
                   {title}

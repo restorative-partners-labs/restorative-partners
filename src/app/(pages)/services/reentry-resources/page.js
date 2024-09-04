@@ -44,7 +44,7 @@ const ServiceSingle = () => {
               <div className="pt-12.5">
                 {/* <Title title_text={"What's Included"} /> */}
                 <ul>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/reentry-resources/system-navigation"}>
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
                         strokeWidth="1"
@@ -61,7 +61,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/reentry-resources/workforce-development"}>
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
                         strokeWidth="1"
@@ -78,7 +78,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/reentry-resources/case-management"}>
                     {" "}
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
@@ -96,25 +96,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
-                    {" "}
-                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
-                      <svg
-                        strokeWidth="1"
-                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
-                      >
-                        <text x="0%" dominantBaseline="middle" y="70%">
-                          3
-                        </text>
-                      </svg>
-                      <div className="w-full">
-                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
-                        Case Management
-                        </h2>
-                      </div>
-                    </li>
-                  </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/reentry-resources/cencal-calaim"}>
                     {" "}
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
@@ -132,7 +114,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/in-custody-programs/juvenile-hall"}>
+                  <Link href={"/services/reentry-resources/education"}>
                     {" "}
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
@@ -150,7 +132,7 @@ const ServiceSingle = () => {
                       </div>
                     </li>
                   </Link>
-                  <Link href={"/treatment"}>
+                  <Link href={"/services/treatment"}>
                     {" "}
                     <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
                       <svg
