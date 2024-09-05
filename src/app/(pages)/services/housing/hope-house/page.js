@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg_banner from "@/assets/images/HOPE-HOUSE.jpg";
+import bg_banner from "@/assets/images/hope-house.jpg";
 import project_img_1 from "@/assets/images/project-image-1.jpg";
 import project_img_2 from "@/assets/images/project-image-2.jpg";
 import RightArrow from "@/assets/icons/rightArrow";

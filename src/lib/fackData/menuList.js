@@ -185,6 +185,13 @@ export const menuList = [
   },
   {
     id: 6,
+    name: "Subscribe",
+    path: "https://restorativepartners.networkforgood.com/projects/214282-restorative-partners",
+    isMegaMenu: false,
+    isDropdown: false,
+  },
+  {
+    id: 7,
     name: "Donate",
     path: "https://restorativepartners.networkforgood.com/projects/214282-restorative-partners",
     isMegaMenu: false,
@@ -344,6 +351,13 @@ export const mobileMenuList = [
   // },
   {
     id: 6,
+    name: "Subscribe",
+    path: "https://restorativepartners.networkforgood.com/projects/214282-restorative-partners",
+    isMegaMenu: false,
+    isDropdown: false,
+  },
+  {
+    id: 7,
     name: "Donate",
     path: "https://restorativepartners.networkforgood.com/projects/214282-restorative-partners",
     isMegaMenu: false,

@@ -1,68 +1,17 @@
 export const jobPostList = [
     {
         id: "01",
-        job_name: "Senior Interior Designer",
+        job_name: "Executive Assistant / Office Manager",
         time: "Full time",
-        location: "USA,California",
-        date_line: "28 Feb 2024",
+        location: "San Luis Obispo, California",
+        date_line: "31 Sept 2024",
         level: "Expert",
         salary: {
-            range: "$45k - $60k",
-            time: "year"
-        },
-        link: ""
-    },
-    {
-        id: "02",
-        job_name: "Junior Architect",
-        time: "Part time",
-        location: "Remote",
-        date_line: "28 Feb 2024",
-        level: "Fresher",
-        salary: {
-            range: "$1500 - $1800",
-            time: "month"
-        },
-        link: ""
-    },
-    {
-        id: "03",
-        job_name: "Marketing Specialist",
-        time: "Full time",
-        location: "Germany, Berlin",
-        date_line: "28 Feb 2024",
-        level: "Expert",
-        salary: {
-            range: "$200",
-            time: "week"
-        },
-        link: ""
-    },
-    {
-        id: "04",
-        job_name: "Project Manager",
-        time: "Full time",
-        location: "USA, Cupertino",
-        date_line: "28 Feb 2024",
-        level: "Intermediate",
-        salary: {
-            range: "$3k",
-            time: "month"
-        },
-        link: ""
-    },
-    {
-        id: "05",
-        job_name: "3DS Max expert",
-        time: "Freelance",
-        location: "Remote",
-        date_line: "28 Feb 2024",
-        level: "Expert",
-        salary: {
-            range: "$35 - $40",
+            range: "$20 - $25",
             time: "hour"
         },
-        link: ""
+        link: "/Executive-Assistant_Office-Manager_Restorative-Partners.pdf"
     },
+  
 
 ]

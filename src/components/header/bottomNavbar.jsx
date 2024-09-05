@@ -78,9 +78,6 @@ const BottomNavbar = ({ linkColor }) => {
               );
             })}
 
-            <li>           <ButtonOutline>
-                Send message <RightArrow height={"22"} width={"35"} />
-              </ButtonOutline></li>
             <li
               className={cn(
                 `other_icon text-primary-foreground px-6 cursor-pointer ${linkColor}`
