@@ -1,86 +1,574 @@
-import Image from 'next/image'
-import bg_banner from "@/assets/images/project-hero-image.jpg"
-import project_img_1 from "@/assets/images/project-image-1.jpg"
-import project_img_2 from "@/assets/images/project-image-2.jpg"
-import RightArrow from '@/assets/icons/rightArrow'
-import ProjectSingleSliderOne from '@/components/section/projectSingle/projectSingleSliderOne'
-import Paragraph from '@/components/section/projectSingle/paragraph'
-import ProjectSingleSliderTwo from '@/components/section/projectSingle/projectSingleSliderTwo'
-import TeamTwo from '@/components/section/team/teamTwo'
-import Feedback from '@/components/section/feedback'
-import ButtonOutline from '@/components/ui/buttons/buttonOutline'
-import Title from '@/components/ui/title'
+import RightArrow from "@/assets/icons/rightArrow";
+import ButtonOutline from "@/components/ui/buttons/buttonOutline";
+import InputFiled from "@/components/ui/inputFiled";
+import SectionTitle from "@/components/ui/sectionTitle";
+import TextAreaFiled from "@/components/ui/textAreaFiled";
+import { cn } from "@/lib/utils";
 
 export const metadata = {
-    title: "Architronix -- Project Single",
-    description: "Architronix is a next js and tailwind css website",
+  title: "Restorative Partners - Housing Waitlist Application",
+  description: "Architronix is a next js and tailwind css website",
 };
 
-const ProjectSingle = () => {
-    return (
-        <>
-            <section className='blog-single'>
-                <div>
-                    <Image src={bg_banner} loading='lazy'      alt="img" />
-                    <div className='container 2sm:mt-[156px] sm:mt-30 mt-20'>
-                        <div className='grid lg:grid-cols-[65%_auto] gap-[38px]'>
-                            <div className='relative after:absolute sm:after:-left-12.5 after:-left-5 after:top-1/2 after:-translate-y-1/2 after:w-[1px] sm:after:h-[130%] after:h-[120%] after:bg-primary sm:ml-12.5 ml-5'>
-                                <h1 className='text-primary-foreground [font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110'>A dream villa</h1>
-                                <span className='inline-block w-[300px] h-[1px] bg-primary'></span>
-                                <p className='text-2xl sm:text-3xl 2sm:text-4xl !leading-160 text-primary-foreground mt-[18px]'>The design of this apartment facing Ipanema beach, in Rio de Janeiro, was designed for a couple with two young children, who wanted a space to accompany their daughters' growth and also environments with privacy for home office work.</p>
-                            </div>
-                            <div className=' bg-primary py-15 sm:px-[38px] px-5 lg:-mt-[410px]'>
-                                <Title title_text={"Elegant Urban Oasis"} className={"text-secondary-foreground mb-0"} />
-                                <ul className='pb-7.5 pt-[75px] flex lg:flex-col flex-row flex-wrap lg:flex-nowrap gap-x-7 lg:gap-x-0 gap-y-[52px]'>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Clients:</strong>
-                                        <span className='text-secondary-foreground block'>Sogeprom</span>
-                                    </li>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Area:</strong>
-                                        <span className='text-secondary-foreground block'>891 m²</span>
-                                    </li>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Project year:</strong>
-                                        <span className='text-secondary-foreground block'>Sogeprom</span>
-                                    </li>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Project type:</strong>
-                                        <span className='text-secondary-foreground block'>Sogeprom</span>
-                                    </li>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Location:</strong>
-                                        <span className='text-secondary-foreground block'>Sogeprom</span>
-                                    </li>
-                                    <li>
-                                        <strong className='text-secondary-foreground block text-2xl mb-1.5'>Team:</strong>
-                                        <span className='text-secondary-foreground block'>Russell Otten, Gabriel Ranieri, Raissa Furlan, Maria Pereira</span>
-                                    </li>
-                                </ul>
-                                <ButtonOutline className={"text-secondary-foreground border-secondary whitespace-nowrap hover:text-primary-foreground hover:bg-secondary "}>
-                                    Technical Sheet <span className='rotate-90'><RightArrow height={"25"} width={"22"} /></span>
-                                </ButtonOutline>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='container-fluid mt-30'>
-                        <div className='flex lg:flex-row flex-col gap-8'>
-                            <Image src={project_img_1} loading='lazy'      width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
-                            <Image src={project_img_2} loading='lazy'      width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
-                        </div>
-                    </div>
-                    <Paragraph />
-                    <ProjectSingleSliderOne />
-                    <Paragraph />
-                    <ProjectSingleSliderTwo />
-                    <Paragraph />
-                </div>
+const HousingApplication = () => {
+  return (
+    <section className="mb-5">
+      <div className="container-fluid">
+        <SectionTitle
+          sectionName={"Housing"}
+          sectionTitle={"Waitlist Application"}
+          sectionDesc={
+            "Please fill out the application below to start the process of enrolling into our housing program!"
+          }
+        />
+      </div>
+      <div className="container lg:pt-10 2sm:pt-10 pt-7">
+        {/* ------- contact form */}
+        <div className="grid lg:grid-cols-1 gap-x-30 gap-y-16 lg:gap-y-0 lg:pt-30 2sm:pt-20 pt-14">
+          <form>
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Have you previously participated in any programs with
+                Restorative Partners?
+              </label>
 
-            </section>
-            <TeamTwo />
-            <Feedback />
-        </>
-    )
-}
+              <div className="flex items-center gap-5">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="yes"
+                    className="form-radio accent-[#00706B]" // Tailwind accent color
+                    style={{ accentColor: "#00706B" }} // Fallback for browsers without tailwind accent
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="no"
+                    className="form-radio accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Personal Information
+            </h2>
 
-export default ProjectSingle
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"First Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+              <InputFiled
+                placeholderc={"Middle Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+              <InputFiled
+                placeholderc={"Last Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Phone Number"}
+                type={"number"}
+                className={"mb-[13px]"}
+              />
+              <InputFiled
+                placeholderc={"Your Email"}
+                type={"email"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Date of Birth"}
+                type={"date"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Address
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Street Address"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Address Line 2"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"City"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+              <InputFiled
+                placeholderc={"State"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+              <InputFiled
+                placeholderc={"Zip"}
+                type={"number"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Legal Status
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            {/* Yes/No Question */}
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Are you able to pay for a part of your treatment/membership?
+              </label>
+              <div className="flex items-center gap-5">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="yes"
+                    className="form-radio accent-[#00706B]" // Tailwind accent color
+                    style={{ accentColor: "#00706B" }} // Fallback for browsers without tailwind accent
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="no"
+                    className="form-radio accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Are you currently incarcerated?
+              </label>
+              <div className="flex items-center gap-5">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="yes"
+                    className="form-radio accent-[#00706B]" // Tailwind accent color
+                    style={{ accentColor: "#00706B" }} // Fallback for browsers without tailwind accent
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="no"
+                    className="form-radio accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Treatment History
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Are you receiving alcoholism/drug addiction treatment?
+              </label>
+              <div className="flex items-center gap-5">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="yes"
+                    className="form-radio accent-[#00706B]" // Tailwind accent color
+                    style={{ accentColor: "#00706B" }} // Fallback for browsers without tailwind accent
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="no"
+                    className="form-radio accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+
+            {/* Multi Checkbox Select */}
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Select all that apply to your treatment history.{" "}
+              </label>
+              <div className="flex flex-col gap-2">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="drug-court"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  Drug Court
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="counseling"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  Prop 36
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="job"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  AB109
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="legal"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  POEG
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="legal"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  ATCC
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="legal"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  BATC
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="legal"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  Self-Referral
+                </label>
+              </div>
+            </div>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Have you been treated at any of these locations?
+              </label>
+              <div className="flex flex-col gap-2">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="housing"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  SLO
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="counseling"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  North County
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    name="services"
+                    value="job"
+                    className="form-checkbox accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  South County
+                </label>
+              </div>
+            </div>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                Is your rent funded through your treatment program?
+              </label>
+              <div className="flex items-center gap-5">
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="yes"
+                    className="form-radio accent-[#00706B]" // Tailwind accent color
+                    style={{ accentColor: "#00706B" }} // Fallback for browsers without tailwind accent
+                  />
+                  Yes
+                </label>
+                <label className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="employment"
+                    value="no"
+                    className="form-radio accent-[#00706B]"
+                    style={{ accentColor: "#00706B" }}
+                  />
+                  No
+                </label>
+              </div>
+            </div>
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Contacts
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Case Worker Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Case Worker Phone"}
+                type={"phone"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Treatment Counselor Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Treatment Counselor Phone"}
+                type={"phone"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Probation Officer Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Probation Officer Phone"}
+                type={"phone"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Drug History
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            <TextAreaFiled
+              placeholder={
+                "Please describe your pattern of drug and alcohol use in the last 30 days"
+              }
+              className={"min-h-[223px] mb-[13px]"}
+            />
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                How long since you've used drugs or alcohol?
+              </label>
+
+              <div className="flex items-center gap-5">
+                <InputFiled
+                  placeholderc={"Ex: 90 Days"}
+                  type={"text"}
+                  className={"mb-[13px]"}
+                />
+              </div>
+            </div>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                What did you last use?
+              </label>
+
+              <div className="flex items-center gap-5">
+                <InputFiled
+                  placeholderc={"Ex: Alcohol"}
+                  type={"text"}
+                  className={"mb-[13px]"}
+                />
+              </div>
+            </div>
+
+            <div className="mb-[13px]">
+              <label className="block text-lg font-semibold mb-2">
+                How long has using drugs and/or alcohol been a problem for you?
+              </label>
+
+              <div className="flex items-center gap-5">
+                <InputFiled
+                  placeholderc={"Ex: 10 years"}
+                  type={"text"}
+                  className={"mb-[13px]"}
+                />
+              </div>
+            </div>
+
+            <h2
+              className={cn(
+                `[font-size:_clamp(48px,7vw,30px)] font-extrabold leading-110 text-primary-foreground mb-5 `
+              )}
+            >
+              Employment
+            </h2>
+
+            <span
+              className={cn(`block w-[300px] h-[1px] bg-primary mb-10`)}
+            ></span>
+
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Employer Name"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Employer Phone"}
+                type={"phone"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Occupation"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+            <div className="flex sm:flex-row flex-col gap-x-5">
+              <InputFiled
+                placeholderc={"Years of Employment"}
+                type={"text"}
+                className={"mb-[13px]"}
+              />
+            </div>
+
+            <div className="flex justify-end">
+              <ButtonOutline>
+                Submit Application <RightArrow height={"22"} width={"35"} />
+              </ButtonOutline>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HousingApplication;

@@ -16,6 +16,8 @@ import useActiveNavLink from "@/hooks/useActiveNavLink";
 import useStickyHeader from "@/hooks/useStickyHeader";
 import Image from "next/image";
 import img from "@/assets/images/rp-logo.png";
+import ButtonOutline from "@/components/ui/buttons/buttonOutline";
+import RightArrow from "@/assets/icons/rightArrow";
 
 const BottomNavbar = ({ linkColor }) => {
   const { products } = useSelector((state) => state.addToCart);
@@ -75,6 +77,10 @@ const BottomNavbar = ({ linkColor }) => {
                 </li>
               );
             })}
+
+            <li>           <ButtonOutline>
+                Send message <RightArrow height={"22"} width={"35"} />
+              </ButtonOutline></li>
             <li
               className={cn(
                 `other_icon text-primary-foreground px-6 cursor-pointer ${linkColor}`

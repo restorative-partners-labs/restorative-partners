@@ -1,83 +1,145 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import service_img from "@/assets/images/service-paint-image.jpg"
-import SectionTitle from '@/components/ui/sectionTitle'
-import Title from '@/components/ui/title'
-import ServiceSingleSidebar from '@/components/ui/serviceSingleSidebar'
-import Feedback from '@/components/section/feedback'
+import service_img from "@/assets/images/service-paint-image.jpg";
+import SectionTitle from "@/components/ui/sectionTitle";
+import Title from "@/components/ui/title";
+import ServiceSingleSidebar from "@/components/ui/serviceSingleSidebar";
+import Feedback from "@/components/section/feedback";
+import Link from "next/link";
+
 
 export const metadata = {
-  title: "Architronix -- Service Single",
+  title: "Restorative Partners - Social Enterprise",
   description: "Architronix is a next js and tailwind css website",
 };
-
 
 const ServiceSingle = () => {
   return (
     <>
       <section>
-        <div className='container-fluid '>
-          <SectionTitle sectionName={"Services"} sectionTitle={"Color Consultation"} sectionDesc={"Exploring Excellence in Every Meticulous Design Detail"} />
+        <div className="container-fluid ">
+          <SectionTitle
+            sectionName={"Services"}
+            sectionTitle={"Social Enterprise"}
+            sectionDesc={
+              "A business whose primary purpose is addressing a social challenge rather than creating profit for owners or shareholders. All proceeds from the cafe are fed back into Restorative Partners' programs and services."
+            }
+          />
         </div>
-        <div className='container lg:pt-30 2sm:pt-20 pt-14'>
-          <div className='grid lg:grid-cols-[58%_auto] xl:gap-[120px] gap-15 items-start'>
+        <div className="container lg:pt-30 2sm:pt-20 pt-14">
+          <div className="grid lg:grid-cols-[58%_auto] xl:gap-[120px] gap-15 items-start">
             <div>
-              <Image src={service_img} loading='lazy'      alt='service-img' />
-              <div className='pt-12.5'>
-                <Title title_text={"Overview"} />
-                <p className='text-primary-foreground '>
-                  At Architronix, our Color Consultation services are designed to elevate your space through the power of color. Whether you're revamping your home, office, or commercial establishment, our expert color consultants bring a wealth of knowledge and creativity to transform your environment.
-                </p>
-              </div>
-              <div className='pt-12.5'>
-                <Title title_text={"What's Included"} />
+              <div className="pt-12.5">
+                {/* <Title title_text={"What's Included"} /> */}
                 <ul>
-                  <li>
-                    <h5 className='font-bold'>Personalized Color Schemes:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Tailored color palettes crafted to complement your style, preferences, and the unique characteristics of your space.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Expert Advice:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Consultation with our experienced color specialists who provide insights into the psychological and aesthetic aspects of color selection.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Space Analysis:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>In-depth analysis of your space, considering lighting, architecture, and existing elements to ensure cohesive and harmonious color choices.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Material Coordination:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Guidance on coordinating colors with existing materials, furniture, and decor elements to achieve a unified and polished look.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Trend Integration:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Incorporation of current design trends while ensuring a timeless and enduring appeal.</p>
-                  </li>
+                  <Link href={"/services/treatment/aa"}>
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          1
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Alcoholics Anonymous
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/services/treatment/na"}>
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          2
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Narcotics Anonymous
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/services/treatment/domestic-violence-group"}>
+                    {" "}
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          3
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Domestic Violence Group
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/services/treatment/anger-management-group"}>
+                    {" "}
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          4
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Anger Management Group
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/services/treatment/substance-use-group"}>
+                    {" "}
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          5
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          Substance Use Group
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
+                  <Link href={"/services/treatment/ptsd-group"}>
+                    {" "}
+                    <li className="bg-secondary grid lg:grid-cols-[8%_auto] lg:gap-y-0 gap-y-6 justify-between items-center mb-7.5 py-8 px-7.5 border border-primary">
+                      <svg
+                        strokeWidth="1"
+                        className="h-[65px] w-20 relative -top-2  left-0 xl:text-6xl text-5xl inline-block font-extrabold leading-120 stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation"
+                      >
+                        <text x="0%" dominantBaseline="middle" y="70%">
+                          6
+                        </text>
+                      </svg>
+                      <div className="w-full">
+                        <h2 className="text-2xl font-bold leading-160 text-primary-foreground">
+                          PTSD Group (TBA)
+                        </h2>
+                      </div>
+                    </li>
+                  </Link>
                 </ul>
               </div>
-              <div className='pt-12.5'>
-                <Title title_text={"How It Works"} />
-                <ul>
-                  <li>
-                    <h5 className='font-bold'>Consultation Request:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Reach out to our team and express your interest in a Color Consultation.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Initial Discussion:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>A preliminary discussion to understand your goals, preferences, and any specific challenges you're facing with your space.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Personalized Color Plan:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Depending on your location and preference, we offer on-site or virtual consultations to assess your space.</p>
-                  </li>
-                  <li className='pt-7.5'>
-                    <h5 className='font-bold'>Follow-Up Support:</h5>
-                    <p className='mt-2.5 xl:ml-[113px] 2sm:ml-14 ml-10'>Our consultants develop a personalized color plan with detailed recommendations and visual representations.</p>
-                  </li>
-                </ul>
-              </div>
-              <strong className='mt-12.5 block'>
-                Enhance your surroundings with the transformative impact of carefully chosen colors. Let Architronix bring your vision to life through our expert Color Consultation services.
-              </strong>
             </div>
             <ServiceSingleSidebar />
           </div>
@@ -85,7 +147,7 @@ const ServiceSingle = () => {
       </section>
       <Feedback />
     </>
-  )
-}
+  );
+};
 
-export default ServiceSingle
+export default ServiceSingle;
