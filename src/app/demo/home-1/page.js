@@ -22,7 +22,7 @@ import HeaderOne from '@/components/header/headerOne'
 import Footer from '@/components/footer'
 
 export const metadata = {
-  title: "Architronix -- Home-1",
+  title: "Restorative Partners -- Home-1",
   description: "Architronix is a next js and tailwind css website",
 };
 

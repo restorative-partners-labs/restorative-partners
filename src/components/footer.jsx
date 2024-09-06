@@ -2,6 +2,9 @@ import Link from "next/link";
 import SocialMediaList from "./ui/socialMediaList";
 import Image from "next/image";
 import img from "@/assets/images/rp-logo.png";
+import ButtonOutline from "@/components/ui/buttons/buttonOutline";
+import { cn } from "@/lib/utils";
+import RightArrow from "@/assets/icons/rightArrow";
 
 const Footer = () => {
   return (
@@ -17,6 +20,13 @@ const Footer = () => {
                 Transforming Lives Impacted by Crime through Healing Services &
                 Relationships
               </h5>
+              {/* <Link href={"/donate"}>
+                <ButtonOutline
+                  className={cn(`2sm:px-10 px-3 after:left-0 after:bg-black`)}
+                >
+                  Donate <RightArrow height={"22"} width={"35"} />{" "}
+                </ButtonOutline>
+              </Link> */}
               <SocialMediaList />
             </div>
             <div className="mt-12 lg:mt-0 flex gap-x-10">

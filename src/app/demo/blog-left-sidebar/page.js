@@ -6,7 +6,7 @@ import SideBar from '@/components/ui/sideBar'
 import { blogData } from '@/lib/fackData/blogData'
 
 export const metadata = {
-    title: "Architronix -- Blog Left Sidebar",
+    title: "Restorative Partners -- Blog Left Sidebar",
     description: "Architronix is a next js and tailwind css website",
 };
 

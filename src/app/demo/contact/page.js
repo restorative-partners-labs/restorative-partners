@@ -21,7 +21,7 @@ const LeafletMap = dynamic(
 )
 
 export const metadata = {
-    title: "Architronix -- Contact",
+    title: "Restorative Partners -- Contact",
     description: "Architronix is a next js and tailwind css website",
 };
 

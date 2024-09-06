@@ -5,7 +5,7 @@ import SectionTitle from "@/components/ui/sectionTitle"
 import { blogData } from "@/lib/fackData/blogData"
 
 export const metadata = {
-    title: "Architronix -- Blog Archive",
+    title: "Restorative Partners -- Blog Archive",
     description: "Architronix is a next js and tailwind css website",
   };
 const BlogArchive = () => {

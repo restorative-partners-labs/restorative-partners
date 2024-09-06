@@ -7,7 +7,7 @@ import ServiceSingleSidebar from '@/components/ui/serviceSingleSidebar'
 import Feedback from '@/components/section/feedback'
 
 export const metadata = {
-  title: "Architronix -- Service Single",
+  title: "Restorative Partners -- Service Single",
   description: "Architronix is a next js and tailwind css website",
 };
 

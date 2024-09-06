@@ -48,8 +48,8 @@ const faqData = [
 ];
 const Faq = ({ className, faqData, title }) => {
   return (
-    <section className={`pt-5 ${className}`}>
-      <div className="container lg:pt-30 2sm:pt-20 pt-14 lg:pb-30">
+    <section className={`pt-1 ${className}`}>
+      <div className="container lg:pt-10 2sm:pt-20 pt-14 lg:pb-30">
         <div className="grid lg:grid-cols-[100%_auto] items-center gap-17.5">
           <div>
             <Accordion type="single" defaultValue="1" collapsible>

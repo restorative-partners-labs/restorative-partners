@@ -4,7 +4,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import RightArrow from "@/assets/icons/rightArrow";
-import ButtonOutline from "./buttons/buttonOutline";
+        
 
 const SectionTitle = ({
   sectionName,

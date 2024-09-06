@@ -7,7 +7,7 @@ import AboutThree from '@/components/section/about/aboutThree'
 import Faq from '@/components/section/faq'
 
 export const metadata = {
-  title: "Architronix -- Career",
+  title: "Restorative Partners -- Career",
   description: "Architronix is a next js and tailwind css website",
 };
 const Career = () => {

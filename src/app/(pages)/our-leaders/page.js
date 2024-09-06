@@ -8,7 +8,7 @@ import { groq } from "next-sanity";
 import React, { useEffect, useState } from "react";
 
 export const staffQuery = groq`*[_type == "staff" && defined(firstName)]{
-    _id, firstName, lastName, image, role, email, phone, phoneExt, type
+    _id, firstName, lastName, image, role, email, phone, phoneExt, type, slug
   }`;
 
 const Team = () => {
@@ -60,6 +60,7 @@ const Team = () => {
                   phoneExt,
                   email,
                   type,
+                  slug
                 }) => (
                   <LeaderCard
                     key={id}
@@ -71,6 +72,7 @@ const Team = () => {
                     phoneExt={phoneExt}
                     email={email}
                     type={type}
+                    slug={slug?.current}
                   />
                 )
               )}

@@ -4,7 +4,7 @@ import { projectsData } from '@/lib/fackData/projectsData'
 import { cardSlideAnimation, cardSlideAnimationDelay, cardSlideAnimationRight, cardSlideAnimationRightDelay } from '@/lib/utils';
 
 export const metadata = {
-    title: "Architronix -- Product Archive",
+    title: "Restorative Partners -- Product Archive",
     description: "Architronix is a next js and tailwind css website",
 };
 

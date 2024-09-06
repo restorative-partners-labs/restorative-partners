@@ -9,7 +9,7 @@ import { client } from "../../../../sanity/lib/client";
 
 const builder = imageUrlBuilder(client);
 
-const  LeaderCard = ({
+const LeaderCard = ({
   img,
   firstName,
   lastName,
@@ -18,6 +18,7 @@ const  LeaderCard = ({
   phone,
   phoneExt,
   type,
+  slug,
 }) => {
   return (
     <motion.div
@@ -45,7 +46,7 @@ const  LeaderCard = ({
             <span className="w-[1px] h-full bg-[#253B2F4D] block absolute right-2"></span>
           </div>
           <Link
-            href={"/team-single"}
+            href={slug ? `/${slug}` : ""}
             className="flex items-center justify-between px-[27px] pt-[9px] pb-[18px]"
           >
             <label>

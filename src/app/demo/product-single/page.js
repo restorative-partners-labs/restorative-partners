@@ -7,7 +7,7 @@ import Title from '@/components/ui/title'
 import { productData } from '@/lib/fackData/productData'
 
 export const metadata = {
-  title: "Architronix -- Product Single",
+  title: "Restorative Partners -- Product Single",
   description: "Architronix is a next js and tailwind css website",
 };
 

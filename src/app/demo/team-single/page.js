@@ -12,7 +12,7 @@ import SocialMediaList from '@/components/ui/socialMediaList'
 import { teamData } from '@/lib/fackData/teamData'
 
 export const metadata = {
-  title: "Architronix -- Team Single",
+  title: "Restorative Partners -- Team Single",
   description: "Architronix is a next js and tailwind css website",
 };
 

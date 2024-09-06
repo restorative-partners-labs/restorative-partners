@@ -17,7 +17,7 @@ import TeamCardOne from '@/components/ui/cards/teamCardOne'
 import { cardSlideAnimation } from '@/lib/utils'
 
 export const metadata = {
-  title: "Architronix -- Home-2",
+  title: "Restorative Partners -- Home-2",
   description: "Architronix is a next js and tailwind css website",
 };
 const Home2 = () => {

@@ -12,7 +12,7 @@ import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 import Title from '@/components/ui/title'
 
 export const metadata = {
-    title: "Architronix -- Project Single",
+    title: "Restorative Partners -- Project Single",
     description: "Architronix is a next js and tailwind css website",
 };
 

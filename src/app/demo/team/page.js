@@ -4,7 +4,7 @@ import SectionTitle from '@/components/ui/sectionTitle'
 import { teamData } from '@/lib/fackData/teamData'
 
 export const metadata = {
-    title: "Architronix -- Team",
+    title: "Restorative Partners -- Team",
     description: "Architronix is a next js and tailwind css website",
 };
 

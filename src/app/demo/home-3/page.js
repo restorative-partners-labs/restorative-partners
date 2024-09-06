@@ -17,7 +17,7 @@ import { teamData } from '@/lib/fackData/teamData'
 import { cardSlideAnimation } from '@/lib/utils'
 
 export const metadata = {
-  title: "Architronix -- Home-3",
+  title: "Restorative Partners -- Home-3",
   description: "Architronix is a next js and tailwind css website",
 };
 const Home3 = () => {
