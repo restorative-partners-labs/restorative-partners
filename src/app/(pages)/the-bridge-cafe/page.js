@@ -7,7 +7,7 @@ import { jobPostList } from '@/lib/fackData/jobPostList'
 
 
 export const metadata = {
-  title: "Architronix -- Job Details",
+  title: "Restorative Partners -- The Bridge Cafe",
   description: "Architronix is a next js and tailwind css website",
 };
 const JobDetails = () => {
@@ -46,21 +46,21 @@ const JobDetails = () => {
       <div className='container-fluid'>
         <div className='bg-secondary pt-[94px] pb-[130px]'>
           <div className='container'>
-            <h2 className='[font-size:_clamp(40px,7vw,90px)] leading-120 text-primary-foreground font-extrabold max-w-[768px]'>Senior Interior Designer</h2>
+            <h2 className='[font-size:_clamp(40px,7vw,90px)] leading-120 text-primary-foreground font-extrabold max-w-[768px]'>The Bridge Cafe</h2>
             <div className='flex 2sm:flex-row flex-col justify-between pt-11'>
               <div className='flex sm:flex-row flex-col justify-between lg:basis-1/2 basis-[65%]'>
                 <div>
-                  <strong className='text-primary-foreground'>USA,California</strong>
-                  <p className='text-primary-foreground'> <span>Apply before:</span> <span className='font-bold whitespace-nowrap'> 28 Feb 2024</span> </p>
+                  <strong className='text-primary-foreground'>1074 Higuera Street</strong>
+                  <p className='text-primary-foreground'> <span className='font-bold whitespace-nowrap'>San Luis Obispo, CA</span> </p>
                 </div>
                 <div className='2sm:mt-0 mt-6'>
-                  <strong className='text-primary-foreground'>Expert</strong>
-                  <p className='text-primary-foreground flex gap-2'> <span>$45k - $60k </span>/ <span className='font-bold'>year</span></p>
+                  <strong className='text-primary-foreground'>Hours</strong>
+                  <p className='text-primary-foreground flex gap-2'> <span>Mon - Fri 7AM - 3PM</span></p>
                 </div>
               </div>
               <div className='2sm:mt-0 mt-6'>
-                <Link href={""}>
-                  <ButtonFill className={"px-7.5 py-2.5 after:left-0"}>Apply Now</ButtonFill>
+                <Link href={"https://thebridgecafe.org/order"}>
+                  <ButtonFill className={"px-7.5 py-2.5 after:left-0"}>Order Now</ButtonFill>
                 </Link>
               </div>
             </div>
@@ -100,15 +100,7 @@ const JobDetails = () => {
           </div>
           <JobDetailsSidebar />
         </div>
-        <div className='pt-15 pb-30'>
-          <Title title_text={"Other Jobs"} />
-          <ul>
-            {
-              jobPostList.map(({ id, date_line, job_name, level, link, location, salary, time }) =>
-                <JobPostCard key={id} id={id} date_line={date_line} job_name={job_name} level={level} location={location} link={link} salary={salary} time={time} />)
-            }
-          </ul>
-        </div>
+
       </div>
     </>
   )

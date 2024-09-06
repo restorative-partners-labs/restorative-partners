@@ -49,20 +49,20 @@ const bannerBottomContent = [
   {
     id: 1,
     banner_img: hero_community,
-    title: "Community",
-    link: "/about",
+    title: "Donate",
+    link: "/donate",
   },
   {
     id: 2,
     banner_img: hero_services,
     title: "Services",
-    link: "/about",
+    link: "/services",
   },
   {
     id: 3,
     banner_img: hero_join_us,
-    title: "Join Us",
-    link: "/about",
+    title: "Subscribe",
+    link: "/subscribe",
   },
 ];
 
@@ -93,17 +93,26 @@ const BannerTwo = () => {
                     "px-[35px] sm:py-2.5 py-2.5 border-secondary text-secondary-foreground after:bg-secondary hover:text-primary after:left-0"
                   }
                 >
-                  <span className="text-base">Who we are</span>
+                  <span className="text-base">Our Story</span>
+                </ButtonOutline>
+              </Link>
+              <Link href={"/about"} className="mt-10 inline-block">
+                <ButtonOutline
+                  className={
+                    "px-[35px] sm:py-2.5 py-2.5 border-secondary text-secondary-foreground after:bg-secondary hover:text-primary after:left-0"
+                  }
+                >
+                  <span className="text-base">Donate</span>
                 </ButtonOutline>
               </Link>
               <Link href={"/services"} className="lg:mt-10 mt-2 inline-block">
-                <ButtonFill
+                <ButtonOutline
                   className={
-                    "px-[35px] sm:py-2.5 py-2.5 after:bg-secondary text-primary-foreground border-secondary hover:text-secondary-foreground"
+                    "px-[35px] sm:py-2.5 py-2.5 border-secondary text-secondary-foreground after:bg-secondary hover:text-primary after:left-0"
                   }
                 >
-                  <span className="text-base">View Services</span>
-                </ButtonFill>
+                  <span className="text-base">Services</span>
+                </ButtonOutline>
               </Link>
             </div>
           </div>
